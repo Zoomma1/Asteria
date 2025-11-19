@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: AsteriaDB
+    restart: always
+    environment:
+      POSTGRES_USER: stars
+      POSTGRES_PASSWORD: stars
+      POSTGRES_DB: AsteriaDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_asteria:/var/lib/postgresql/data
+
+volumes:
+  pgdata_asteria:
