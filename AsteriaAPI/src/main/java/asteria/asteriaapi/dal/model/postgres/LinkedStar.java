@@ -17,8 +17,10 @@ public class LinkedStar {
     private Constellation constellation;
 
     @ManyToOne
+    @JoinColumn(name = "from_star_id")
     private Star fromStar;
 
     @ManyToOne
+    @JoinColumn(name = "to_star_id")
     private Star toStar;
 }

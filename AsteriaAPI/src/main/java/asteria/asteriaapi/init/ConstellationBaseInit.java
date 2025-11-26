@@ -117,6 +117,7 @@ public class ConstellationBaseInit implements ApplicationRunner {
                         }
 
                     } catch (NumberFormatException e) {
+                        System.err.println("Invalid HIP number: " + hip1Str + " or " + hip2Str);
                     }
                 }
             }
@@ -125,9 +126,9 @@ public class ConstellationBaseInit implements ApplicationRunner {
 
     /**
      * Charge le mapping code IAU -> nom complet de constellation.
-     * ConstelationCodes.csv doit être du type :
-     * code;name
-     * UMi;Ursa Minor
+     * ConstellationCodes.csv doit être du type :
+     * code,name
+     * UMi,Ursa Minor
      * ...
      */
     private Map<String, String> loadConstellationCodes() throws Exception {
@@ -169,7 +170,7 @@ public class ConstellationBaseInit implements ApplicationRunner {
 
             if (to.getFigureConstellation() == null) {
                 to.setFigureConstellation(constellation);
-                starRepo.save(to);
+                starRepo.save(to);      // Here we are not using batch save because it's unlikely to have more than a few hundred stars to update
                 count++;
             }
         }

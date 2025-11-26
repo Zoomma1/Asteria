@@ -16,7 +16,8 @@ public class SecurityConfig {
             .authorizeHttpRequests(authz -> authz
                 .anyRequest().permitAll()
             )
-            .csrf(csrf -> csrf.disable()); // Disable CSRF for API
+            // TODO: Change this to a more secure configuration when deploying on a public server
+            .csrf(csrf -> csrf.disable()); // Disable CSRF for API access, not recommended for web apps but its fine here as long as we run it locally
 
         return http.build();
     }

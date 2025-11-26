@@ -8,6 +8,7 @@ import asteria.asteriaapi.mapper.ConstellationMapper;
 import asteria.asteriaapi.mapper.StarListMapper;
 import asteria.asteriaapi.mapper.StarMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class ConstellationService {
     private final ConstellationRepository constellationRepository;
 
+    @EntityGraph
     @Transactional(readOnly = true)
     public ConstellationListResponseDto getConstellations() {
         var constellations = constellationRepository.findAll()
@@ -24,16 +26,5 @@ public class ConstellationService {
                 .toList();
 
         return ConstellationListMapper.toDto(constellations);
-    }
-
-    @Transactional(readOnly = true)
-    public StarListResponseDto getStarsInConstellations(double minMag, double maxMag) {
-        var starsInConstellations = constellationRepository.findAll()
-                .stream()
-                .flatMap(constellation -> constellation.getStars().stream())
-                .filter(star -> star.getMag() != null && star.getMag() >= minMag && star.getMag() <= maxMag)
-                .map(StarMapper::toDto)
-                .toList();
-        return StarListMapper.toDto(starsInConstellations);
     }
 }

@@ -1,6 +1,5 @@
 package asteria.asteriaapi.mapper;
 
-import asteria.asteriaapi.dal.model.postgres.Star;
 import asteria.asteriaapi.dto.Response.StarListResponseDto;
 import asteria.asteriaapi.dto.Response.StarResponseDto;
 

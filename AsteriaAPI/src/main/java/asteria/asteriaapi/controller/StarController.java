@@ -20,18 +20,9 @@ public class StarController {
     public StarListResponseDto getStars(
             @RequestParam(defaultValue = "-2") double minMag,
             @RequestParam(defaultValue = "6.5") double maxMag,
-            @RequestParam(required = false) int limit
+            @RequestParam(defaultValue = "500") int limit
     ) {
         List<StarResponseDto> stars = service.getStars(minMag, maxMag, limit);
-        return StarListMapper.toDto(stars);
-    }
-
-    @GetMapping("/constellations")
-    public StarListResponseDto getStarsInConstellations(
-            @RequestParam(defaultValue = "-2") double minMag,
-            @RequestParam(defaultValue = "6.5") double maxMag
-    ) {
-        List<StarResponseDto> stars = service.getStarsInConstellations(minMag, maxMag);
         return StarListMapper.toDto(stars);
     }
 }

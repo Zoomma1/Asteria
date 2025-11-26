@@ -1,7 +1,6 @@
 package asteria.asteriaapi.init;
 
 import asteria.asteriaapi.dal.model.postgres.Star;
-import asteria.asteriaapi.dal.model.postgres.Constellation;
 import asteria.asteriaapi.dal.postgres.repository.StarRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,7 +29,6 @@ public class DatabaseInitializer implements ApplicationRunner {
 
     private void importHyg() throws Exception {
         List<Star> stars = new ArrayList<>();
-        Map<Integer, Constellation> conMap = new HashMap<>();
         Set<Integer> processedHip = new HashSet<>();
 
         if (repo.count() > 0) {
@@ -48,7 +46,7 @@ public class DatabaseInitializer implements ApplicationRunner {
                 Integer hr = parseInt(c[3]);
                 Integer hd = parseInt(c[2]);
 
-                String proper = !Objects.equals(c[6], "") ? "hip " + hip : c[6];
+                String proper = !Objects.equals(c[6], "") ? c[6] : "hip " + hip;
                 String con = emptyToNull(c[29]);
 
                 String bayer = emptyToNull(c[27]);
