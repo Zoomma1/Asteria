@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 
-namespace XRInteractionWithStars
+namespace LaserRayCasting
 {
     /// <summary>
     /// Script qui affiche un rayon laser depuis la manette droite lorsque la gâchette est pressée.
