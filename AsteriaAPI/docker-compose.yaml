@@ -15,7 +15,7 @@ services:
       - pg_data_asteria:/var/lib/postgresql/data
 
   backend:
-    build: ./AsteriaAPI
+    build: .
     depends_on:
       - postgres
     environment:
