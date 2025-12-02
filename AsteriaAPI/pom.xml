@@ -14,7 +14,7 @@
     </parent>
 
     <properties>
-        <org.apache.maven.plugins.version>3.11.0</org.apache.maven.plugins.version>
+        <org.apache.maven.plugins.version>3.12.0</org.apache.maven.plugins.version>
         <java.version>22</java.version>
     </properties>
 
