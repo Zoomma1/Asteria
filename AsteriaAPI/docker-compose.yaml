@@ -12,7 +12,20 @@ services:
     ports:
       - "5434:5432"
     volumes:
-      - pg_data_asteria:/var/lib/postgresql/data
+      - pg_data_asteria:/var/lib/postgresql/16/data
+
+  backend:
+    build: .
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/AsteriaDB
+      SPRING_DATASOURCE_USERNAME: Asteria
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs:/logs
 
 volumes:
   pg_data_asteria:

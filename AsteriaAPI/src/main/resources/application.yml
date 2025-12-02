@@ -6,6 +6,8 @@ spring:
       max-file-size: 50MB
       max-request-size : 50MB
   jpa:
+    hibernate:
+      ddl-auto: create
     properties:
       jdbc:
         batch_size: 50
@@ -13,19 +15,10 @@ spring:
         use_jdbc_metadata_defaults: false
     open-in-view: false
   flyway:
-    enabled: true
-    password: ${spring.datasource.password}
-    user: ${spring.datasource.username}
-    placeholders:
-      password: ${spring.datasource.password}
-      username: ${spring.datasource.username}
-    locations: classpath:db/migration
-    url: ${spring.datasource.url}
-    schemas: public
+    enabled: false
 
 server:
   error:
     include-message: always
     include-exception: true
     include-binding-errors: always
-
