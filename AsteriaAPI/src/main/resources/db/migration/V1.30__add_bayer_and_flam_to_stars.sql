@@ -1,0 +1,4 @@
+ALTER TABLE stars
+    ADD COLUMN bayer VARCHAR(30),
+    ADD COLUMN flam INTEGER,
+    ADD COLUMN line_index INTEGER;
