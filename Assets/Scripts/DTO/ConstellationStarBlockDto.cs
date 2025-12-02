@@ -1,8 +1,9 @@
 ﻿namespace DTO
 {
     [System.Serializable]
-    public class ConstellationStarBlock
+    public class ConstellationStarBlockDto
     {
-        public 
+        public StarListDto stars;
+        public LinkedStarListDto linkedStars;
     }
 }
