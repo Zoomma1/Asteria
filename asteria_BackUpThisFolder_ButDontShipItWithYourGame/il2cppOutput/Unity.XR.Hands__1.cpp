@@ -439,8 +439,8 @@ struct List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_tBF5663E9A4A0B6D6E1CDFF5C036B265B03455C16_StaticFields
 {
+	__StaticArrayInitTypeSizeU3D3646_t63337EFE75F8BF637912278E56EDBEF8BE4B9464 ___0188206ED718280D2EE2A9EDC8DADCCA5C6B278D4B1F1A7048D70EC9C48D9AFE;
 	__StaticArrayInitTypeSizeU3D3789_t36C3CB0E0FE2CA02CA2FFD8FB1FF7E895343DB11 ___A1A2E182A61823E45E00BC742AF3941D7C4855AA4BAD7177A047B482CC0D8F06;
-	__StaticArrayInitTypeSizeU3D3646_t63337EFE75F8BF637912278E56EDBEF8BE4B9464 ___B0E6FA9094DDDA64AAFFADA12C0D06F5FEC20D0202C0DEDA613B4E975B3B264C;
 };
 struct BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_StaticFields
 {
@@ -656,7 +656,7 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_GetReferenceDirection_0000021AU24Po
 	il2cppPInvokeFunc(___0_result, ___1_handPosition, ___2_direction, ___3_handTrackingOrigin, ___4_headTransform, ___5_handednessMultiplier);
 
 }
-// Method Definition Index: 72259
+// Method Definition Index: 72300
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_0000021AU24PostfixBurstDelegate__ctor_mEA7F7D390A3841ADA5F0E9432E9BE13C7E1B3644 (GetReferenceDirection_0000021AU24PostfixBurstDelegate_tECC210C56029760D920D2A036E4932BA1F9C5B4A* __this, RuntimeObject* ___0_p, intptr_t ___1_p, const RuntimeMethod* method) 
 {
 	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_p);
@@ -693,13 +693,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_0000021AU24Postfix
 	}
 	__this->___extra_arg = (intptr_t)&GetReferenceDirection_0000021AU24PostfixBurstDelegate_Invoke_mDE960697C4B14692AC07EA65233F48345B30B47D_Multicast;
 }
-// Method Definition Index: 72260
+// Method Definition Index: 72301
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_0000021AU24PostfixBurstDelegate_Invoke_mDE960697C4B14692AC07EA65233F48345B30B47D (GetReferenceDirection_0000021AU24PostfixBurstDelegate_tECC210C56029760D920D2A036E4932BA1F9C5B4A* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_handPosition, int32_t ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_headTransform, float ___5_handednessMultiplier, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*, int32_t, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*, float, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_result, ___1_handPosition, ___2_direction, ___3_handTrackingOrigin, ___4_headTransform, ___5_handednessMultiplier, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 72261
+// Method Definition Index: 72302
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetReferenceDirection_0000021AU24PostfixBurstDelegate_BeginInvoke_mAFFF7AE22DFD9ABE0757BA988ADDFB6C4C1DBC15 (GetReferenceDirection_0000021AU24PostfixBurstDelegate_tECC210C56029760D920D2A036E4932BA1F9C5B4A* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_handPosition, int32_t ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_headTransform, float ___5_handednessMultiplier, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___6_p, RuntimeObject* ___7_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -719,7 +719,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetReferenceDirection_0000021A
 	__d_args[5] = Box(il2cpp_defaults.single_class, &___5_handednessMultiplier);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___6_p, (RuntimeObject*)___7_p);
 }
-// Method Definition Index: 72262
+// Method Definition Index: 72303
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_0000021AU24PostfixBurstDelegate_EndInvoke_mD2B25CAEC35ECDFEF1695A5FE6861582254B371F (GetReferenceDirection_0000021AU24PostfixBurstDelegate_tECC210C56029760D920D2A036E4932BA1F9C5B4A* __this, RuntimeObject* ___0_p, const RuntimeMethod* method) 
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___0_p, 0);
@@ -732,7 +732,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_0000021AU24Postfix
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 72263
+// Method Definition Index: 72304
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_0000021AU24BurstDirectCall_GetFunctionPointerDiscard_m444A6D592C894B0926704DB531C094BCCA256E84 (intptr_t* ___0_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -775,7 +775,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 72264
+// Method Definition Index: 72305
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GetReferenceDirection_0000021AU24BurstDirectCall_GetFunctionPointer_m72EABEC89674ADE48BB51E45C743AFD0245E51B7 (const RuntimeMethod* method) 
 {
 	intptr_t V_0;
@@ -787,7 +787,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GetReferenceDirection_0000021AU24Bur
 		return L_0;
 	}
 }
-// Method Definition Index: 72265
+// Method Definition Index: 72306
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_0000021AU24BurstDirectCall_Invoke_m9E4BFCAC95682A26C715DB29DA4E1F5ABEAB55D7 (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_handPosition, int32_t ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_headTransform, float ___5_handednessMultiplier, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -871,111 +871,111 @@ extern "C" void CDECL ReversePInvokeWrapper_TargetCondition_GetReferenceDirectio
 	*___0_result = ____0_result_empty;
 
 }
-// Method Definition Index: 72266
+// Method Definition Index: 72307
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TargetCondition_get_handAxis_m329B2B338D817F599DED50EB5824D522DBA96FD5 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:209>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:209>
 		int32_t L_0 = __this->___m_HandAxis;
 		return L_0;
 	}
 }
-// Method Definition Index: 72267
+// Method Definition Index: 72308
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_set_handAxis_m486B6226407572962322EC01D95EDF99FE7AAB44 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:210>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:210>
 		int32_t L_0 = ___0_value;
 		__this->___m_HandAxis = L_0;
 		return;
 	}
 }
-// Method Definition Index: 72268
+// Method Definition Index: 72309
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TargetCondition_get_alignmentCondition_m0CA794D9AC0E4D6FA5BB415FEB36A1A254E3661B (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:218>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:218>
 		int32_t L_0 = __this->___m_AlignmentCondition;
 		return L_0;
 	}
 }
-// Method Definition Index: 72269
+// Method Definition Index: 72310
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_set_alignmentCondition_m9D1E6DA0F3255B97510CB5AF7D8DC5B67E4B86EB (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:219>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:219>
 		int32_t L_0 = ___0_value;
 		__this->___m_AlignmentCondition = L_0;
 		return;
 	}
 }
-// Method Definition Index: 72270
+// Method Definition Index: 72311
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TargetCondition_get_referenceDirection_m60603D4DC97830FA0ADA54C9075728EE9C7F2217 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:227>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:227>
 		int32_t L_0 = __this->___m_ReferenceDirection;
 		return L_0;
 	}
 }
-// Method Definition Index: 72271
+// Method Definition Index: 72312
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_set_referenceDirection_mAC7A4FEA9DFA3D5725B9EA84B7BB68A78BFF1810 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:228>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:228>
 		int32_t L_0 = ___0_value;
 		__this->___m_ReferenceDirection = L_0;
 		return;
 	}
 }
-// Method Definition Index: 72272
+// Method Definition Index: 72313
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TargetCondition_get_angleTolerance_m4457BAC5A181A50B5714E2B8133068F098962D2A (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:243>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:243>
 		float L_0 = __this->___m_AngleTolerance;
 		return L_0;
 	}
 }
-// Method Definition Index: 72273
+// Method Definition Index: 72314
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_set_angleTolerance_m132144F1D60690FC0A13A173160996F00CE49343 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:244>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:244>
 		float L_0 = ___0_value;
 		__this->___m_AngleTolerance = L_0;
 		return;
 	}
 }
-// Method Definition Index: 72274
+// Method Definition Index: 72315
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_get_ignorePositionY_m3A69C732A0A9AB15844F73A6568E72C9C7251B6E (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:252>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:252>
 		bool L_0 = __this->___m_IgnorePositionY;
 		return L_0;
 	}
 }
-// Method Definition Index: 72275
+// Method Definition Index: 72316
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_set_ignorePositionY_mD8A432E79AC36B62C6416928F252EFD8038648A7 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:253>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:253>
 		bool L_0 = ___0_value;
 		__this->___m_IgnorePositionY = L_0;
 		return;
 	}
 }
-// Method Definition Index: 72276
+// Method Definition Index: 72317
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_CheckCondition_mECF6E124309E2847C5CA2369E972FBF6220434F8 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_rootPosition, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* ___1_rootRotation, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___2_originTransform, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_targetTransform, float ___4_handednessMultiplier, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:262>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:263>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:264>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:265>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:266>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:267>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:262>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:263>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:264>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:265>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:266>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:267>
 		int32_t L_0 = __this->___m_HandAxis;
 		int32_t L_1 = __this->___m_AlignmentCondition;
 		int32_t L_2 = __this->___m_ReferenceDirection;
@@ -991,7 +991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_CheckCondition_mECF6E124
 		return L_10;
 	}
 }
-// Method Definition Index: 72277
+// Method Definition Index: 72318
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditionBursted_m5BF2FE20A6D5BC6FF6391D46C73B0FDFEBC99001 (int32_t ___0_xrHandAxis, int32_t ___1_condition, int32_t ___2_direction, float ___3_threshold, bool ___4_ignorePositionY, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___5_rootPosition, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* ___6_rootRotation, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___7_originTransform, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___8_targetTransform, float ___9_handednessMultiplier, const RuntimeMethod* method) 
 {
 	{
@@ -1010,7 +1010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditionBursted_m5
 		return L_10;
 	}
 }
-// Method Definition Index: 72278
+// Method Definition Index: 72319
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_GetReferenceDirection_m104D8D094C832F78EFF6FDCBC5C5A9033CB2430D (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_rootPosition, int32_t* ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_targetTransform, const RuntimeMethod* method) 
 {
 	{
@@ -1023,7 +1023,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_GetReferenceDirection_m1
 		return;
 	}
 }
-// Method Definition Index: 72279
+// Method Definition Index: 72320
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition__ctor_m9A17371A0D4D29EDF3562C1A2FF348CAEB570240 (TargetCondition_t9E5AA9B893A798E0E5B72AAF6EE4D2432D4F4E8B* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1031,7 +1031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition__ctor_m9A17371A0D4D29EDF
 		return;
 	}
 }
-// Method Definition Index: 72280
+// Method Definition Index: 72321
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditionBurstedU24BurstManaged_mF415DF3978A57CA2A940DE586A021A78D5A2EE75 (int32_t ___0_xrHandAxis, int32_t ___1_condition, int32_t ___2_direction, float ___3_threshold, bool ___4_ignorePositionY, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___5_rootPosition, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* ___6_rootRotation, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___7_originTransform, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___8_targetTransform, float ___9_handednessMultiplier, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
@@ -1039,31 +1039,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditionBurstedU24
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:282>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:283>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:284>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:285>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:282>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:283>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:284>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:285>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:286>
 		int32_t L_0 = ___0_xrHandAxis;
 		quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* L_1 = ___6_rootRotation;
 		float L_2 = ___9_handednessMultiplier;
 		XRHandOrientationUtility_GetHandAxisDirection_m22DCBF77C9092CC37C826CBA9CE6F978ABB6EF6B((&V_0), L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:288>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:289>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:290>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:291>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:292>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:293>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:288>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:289>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:290>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:291>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:292>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:293>
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* L_3 = ___5_rootPosition;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_4 = ___7_originTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_5 = ___8_targetTransform;
 		TargetCondition_GetReferenceDirection_m104D8D094C832F78EFF6FDCBC5C5A9033CB2430D((&V_1), L_3, (&___2_direction), L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:295>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:296>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:297>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:298>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:299>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:300>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:295>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:296>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:297>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:298>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:299>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:300>
 		int32_t L_6 = ___1_condition;
 		float L_7 = ___3_threshold;
 		bool L_8 = ___4_ignorePositionY;
@@ -1072,14 +1072,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditionBurstedU24
 		return L_9;
 	}
 }
-// Method Definition Index: 72281
+// Method Definition Index: 72322
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_GetReferenceDirectionU24BurstManaged_mD302D609303C01863E6C09627F1D57A6303D92E1 (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_rootPosition, int32_t* ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_targetTransform, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	int32_t V_1 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:314>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:314>
 		int32_t* L_0 = ___2_direction;
 		int32_t L_1 = *((int32_t*)L_0);
 		V_1 = L_1;
@@ -1110,7 +1110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TargetCondition_GetReferenceDirectionU24
 
 IL_001e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:317>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:317>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_3 = ___4_targetTransform;
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_4 = L_3->___pos;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_5 = ___3_handTrackingOrigin;
@@ -1122,13 +1122,13 @@ IL_001e:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_10;
 		L_10 = float3_op_Subtraction_mB6036E9849D95650D6E73DA0D179CD7B61E696F2_inline(L_4, L_9, NULL);
 		V_0 = L_10;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:318>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:318>
 		goto IL_00bd;
 	}
 
 IL_003e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:321>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:321>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_11 = ___4_targetTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_12 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_11);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_13;
@@ -1137,13 +1137,13 @@ IL_003e:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_14;
 		L_14 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_12, L_13, NULL);
 		V_0 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:322>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:322>
 		goto IL_00bd;
 	}
 
 IL_0061:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:325>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:325>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_15 = ___4_targetTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_16 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_15);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_17;
@@ -1152,13 +1152,13 @@ IL_0061:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_18;
 		L_18 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_16, L_17, NULL);
 		V_0 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:326>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:326>
 		goto IL_00bd;
 	}
 
 IL_0084:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:329>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:329>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_19 = ___4_targetTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_20 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_19);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_21;
@@ -1167,19 +1167,19 @@ IL_0084:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_22;
 		L_22 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_20, L_21, NULL);
 		V_0 = L_22;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:330>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:330>
 		goto IL_00bd;
 	}
 
 IL_00a7:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:333>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:333>
 		float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline((&V_0), (0.0f), (1.0f), (0.0f), NULL);
 	}
 
 IL_00bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:337>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:337>
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* L_23 = ___0_result;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_24 = ___3_handTrackingOrigin;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_25 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_24);
@@ -1190,7 +1190,7 @@ IL_00bd:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_29;
 		L_29 = math_mul_mE9E04B2868E4D4BA5BD873E4F876D550D36C2E99_inline(L_27, L_28, NULL);
 		*(float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*)L_23 = L_29;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:338>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:338>
 		return;
 	}
 }
@@ -1233,7 +1233,7 @@ IL2CPP_EXTERN_C  bool DelegatePInvokeWrapper_CheckConditionBursted_00000227U24Po
 
 	return static_cast<bool>(returnValue);
 }
-// Method Definition Index: 72282
+// Method Definition Index: 72323
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheckConditionBursted_00000227U24PostfixBurstDelegate__ctor_m9BA7118661C386AF64ABE5148D0FEE51DE4D5AC8 (CheckConditionBursted_00000227U24PostfixBurstDelegate_t787096F244DE55CAAACE4C5D5C96DA1648474841* __this, RuntimeObject* ___0_p, intptr_t ___1_p, const RuntimeMethod* method) 
 {
 	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_p);
@@ -1262,13 +1262,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheckConditionBursted_00000227U24Postfix
 	}
 	__this->___extra_arg = (intptr_t)&CheckConditionBursted_00000227U24PostfixBurstDelegate_Invoke_m789433B0BE6D9F230D432A8F20B6F4DC699DB5F9_Multicast;
 }
-// Method Definition Index: 72283
+// Method Definition Index: 72324
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CheckConditionBursted_00000227U24PostfixBurstDelegate_Invoke_m789433B0BE6D9F230D432A8F20B6F4DC699DB5F9 (CheckConditionBursted_00000227U24PostfixBurstDelegate_t787096F244DE55CAAACE4C5D5C96DA1648474841* __this, int32_t ___0_xrHandAxis, int32_t ___1_condition, int32_t ___2_direction, float ___3_threshold, bool ___4_ignorePositionY, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___5_rootPosition, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* ___6_rootRotation, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___7_originTransform, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___8_targetTransform, float ___9_handednessMultiplier, const RuntimeMethod* method) 
 {
 	typedef bool (*FunctionPointerType) (RuntimeObject*, int32_t, int32_t, int32_t, float, bool, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4*, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*, float, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_xrHandAxis, ___1_condition, ___2_direction, ___3_threshold, ___4_ignorePositionY, ___5_rootPosition, ___6_rootRotation, ___7_originTransform, ___8_targetTransform, ___9_handednessMultiplier, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 72284
+// Method Definition Index: 72325
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CheckConditionBursted_00000227U24PostfixBurstDelegate_BeginInvoke_m83FB3EE082678265460D085C41A38354DBBE965F (CheckConditionBursted_00000227U24PostfixBurstDelegate_t787096F244DE55CAAACE4C5D5C96DA1648474841* __this, int32_t ___0_xrHandAxis, int32_t ___1_condition, int32_t ___2_direction, float ___3_threshold, bool ___4_ignorePositionY, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___5_rootPosition, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* ___6_rootRotation, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___7_originTransform, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___8_targetTransform, float ___9_handednessMultiplier, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___10_p, RuntimeObject* ___11_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1295,7 +1295,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CheckConditionBursted_00000227
 	__d_args[9] = Box(il2cpp_defaults.single_class, &___9_handednessMultiplier);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___10_p, (RuntimeObject*)___11_p);
 }
-// Method Definition Index: 72285
+// Method Definition Index: 72326
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CheckConditionBursted_00000227U24PostfixBurstDelegate_EndInvoke_m0E1EDD3623E5CD2366F0A78128BAEBAE8FF87681 (CheckConditionBursted_00000227U24PostfixBurstDelegate_t787096F244DE55CAAACE4C5D5C96DA1648474841* __this, RuntimeObject* ___0_p, const RuntimeMethod* method) 
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___0_p, 0);
@@ -1309,7 +1309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CheckConditionBursted_00000227U24Postfix
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 72286
+// Method Definition Index: 72327
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CheckConditionBursted_00000227U24BurstDirectCall_GetFunctionPointerDiscard_mB46ED4D7B428C097405C1237C942A9AFFDBCDD7B (intptr_t* ___0_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1352,7 +1352,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 72287
+// Method Definition Index: 72328
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CheckConditionBursted_00000227U24BurstDirectCall_GetFunctionPointer_mE2A5D4A829B2EE13869748C274C6750FE927B1B5 (const RuntimeMethod* method) 
 {
 	intptr_t V_0;
@@ -1364,7 +1364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CheckConditionBursted_00000227U24Bur
 		return L_0;
 	}
 }
-// Method Definition Index: 72288
+// Method Definition Index: 72329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CheckConditionBursted_00000227U24BurstDirectCall_Invoke_m5B5CFA3C98A2DAA56C99F2D72174266DFAA28507 (int32_t ___0_xrHandAxis, int32_t ___1_condition, int32_t ___2_direction, float ___3_threshold, bool ___4_ignorePositionY, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___5_rootPosition, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* ___6_rootRotation, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___7_originTransform, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___8_targetTransform, float ___9_handednessMultiplier, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1464,7 +1464,7 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_GetReferenceDirection_00000228U24Po
 	il2cppPInvokeFunc(___0_result, ___1_rootPosition, ___2_direction, ___3_handTrackingOrigin, ___4_targetTransform);
 
 }
-// Method Definition Index: 72289
+// Method Definition Index: 72330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_00000228U24PostfixBurstDelegate__ctor_m824AADFFF34089DC0178558255852EA51FEC8D9C (GetReferenceDirection_00000228U24PostfixBurstDelegate_t06A69F827957C509757A48E72DFE0CCEFEA03C23* __this, RuntimeObject* ___0_p, intptr_t ___1_p, const RuntimeMethod* method) 
 {
 	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_p);
@@ -1501,13 +1501,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_00000228U24Postfix
 	}
 	__this->___extra_arg = (intptr_t)&GetReferenceDirection_00000228U24PostfixBurstDelegate_Invoke_m0EEA5555729FA7DD0966C0031F21EF1401FF4ABF_Multicast;
 }
-// Method Definition Index: 72290
+// Method Definition Index: 72331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_00000228U24PostfixBurstDelegate_Invoke_m0EEA5555729FA7DD0966C0031F21EF1401FF4ABF (GetReferenceDirection_00000228U24PostfixBurstDelegate_t06A69F827957C509757A48E72DFE0CCEFEA03C23* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_rootPosition, int32_t* ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_targetTransform, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*, int32_t*, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_result, ___1_rootPosition, ___2_direction, ___3_handTrackingOrigin, ___4_targetTransform, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 72291
+// Method Definition Index: 72332
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetReferenceDirection_00000228U24PostfixBurstDelegate_BeginInvoke_m3CC1045E0816164A41BD6216037E560931A962F3 (GetReferenceDirection_00000228U24PostfixBurstDelegate_t06A69F827957C509757A48E72DFE0CCEFEA03C23* __this, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_rootPosition, int32_t* ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_targetTransform, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___5_p, RuntimeObject* ___6_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1526,7 +1526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetReferenceDirection_00000228
 	__d_args[4] = Box(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD_il2cpp_TypeInfo_var, &*___4_targetTransform);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___5_p, (RuntimeObject*)___6_p);
 }
-// Method Definition Index: 72292
+// Method Definition Index: 72333
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_00000228U24PostfixBurstDelegate_EndInvoke_m5E754CFB75377AF20799C76154C36E5F3C08B5A1 (GetReferenceDirection_00000228U24PostfixBurstDelegate_t06A69F827957C509757A48E72DFE0CCEFEA03C23* __this, RuntimeObject* ___0_p, const RuntimeMethod* method) 
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___0_p, 0);
@@ -1539,7 +1539,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_00000228U24Postfix
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 72293
+// Method Definition Index: 72334
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_00000228U24BurstDirectCall_GetFunctionPointerDiscard_mB51DCCEA26E5210A5892723E9FCE65722B01C495 (intptr_t* ___0_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1582,7 +1582,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 72294
+// Method Definition Index: 72335
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GetReferenceDirection_00000228U24BurstDirectCall_GetFunctionPointer_m33FA84EC0A07DE9512D1515927BD8CD16D4CB38D (const RuntimeMethod* method) 
 {
 	intptr_t V_0;
@@ -1594,7 +1594,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GetReferenceDirection_00000228U24Bur
 		return L_0;
 	}
 }
-// Method Definition Index: 72295
+// Method Definition Index: 72336
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetReferenceDirection_00000228U24BurstDirectCall_Invoke_mAA82458D729237277300B6F333F2B139487CA551 (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_rootPosition, int32_t* ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_targetTransform, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1655,27 +1655,27 @@ IL_0023:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 72296
+// Method Definition Index: 72337
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE* XRHandShape_get_fingerShapeConditions_m6D0296755D80D99B2AA0D64D6556968D30B1D62E (XRHandShape_t225192C9F2E1371524B2C53C203421368A1C45B0* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:28>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:28>
 		List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE* L_0 = __this->___m_FingerShapeConditions;
 		return L_0;
 	}
 }
-// Method Definition Index: 72297
+// Method Definition Index: 72338
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRHandShape_set_fingerShapeConditions_mD84ADBCD89EAFD341100D185FE526947118936B3 (XRHandShape_t225192C9F2E1371524B2C53C203421368A1C45B0* __this, List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:29>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:29>
 		List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE* L_0 = ___0_value;
 		__this->___m_FingerShapeConditions = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_FingerShapeConditions), (void*)L_0);
 		return;
 	}
 }
-// Method Definition Index: 72298
+// Method Definition Index: 72339
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRHandShape_CheckConditions_mFF777819E243AC4554B9044649725B8D8BA073BD (XRHandShape_t225192C9F2E1371524B2C53C203421368A1C45B0* __this, XRHandJointsUpdatedEventArgs_t23369A3B3D49D837CF21B765B7F0E248F362E31F* ___0_eventArgs, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1687,7 +1687,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRHandShape_CheckConditions_mFF777819E24
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:53>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:53>
 		XRHandJointsUpdatedEventArgs_t23369A3B3D49D837CF21B765B7F0E248F362E31F* L_0 = ___0_eventArgs;
 		NullCheck(L_0);
 		XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471* L_1 = (XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471*)(&L_0->___hand);
@@ -1699,20 +1699,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRHandShape_CheckConditions_mFF777819E24
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:54>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:54>
 		return (bool)0;
 	}
 
 IL_000f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:56>
 		V_0 = 0;
 		goto IL_002d;
 	}
 
 IL_0013:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:58>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:58>
 		List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE* L_3 = __this->___m_FingerShapeConditions;
 		int32_t L_4 = V_0;
 		NullCheck(L_3);
@@ -1728,20 +1728,20 @@ IL_0013:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:59>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:59>
 		return (bool)0;
 	}
 
 IL_0029:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:56>
 		int32_t L_8 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_8, 1));
 	}
 
 IL_002d:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:56>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:56>
 		int32_t L_9 = V_0;
 		List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE* L_10 = __this->___m_FingerShapeConditions;
 		NullCheck(L_10);
@@ -1753,11 +1753,11 @@ IL_002d:
 		}
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:62>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:62>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 72299
+// Method Definition Index: 72340
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRHandShape__ctor_m0B99E17F76B2C398822619339D4EC4DC94B5DFF6 (XRHandShape_t225192C9F2E1371524B2C53C203421368A1C45B0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1768,7 +1768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRHandShape__ctor_m0B99E17F76B2C39882261
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandShape.cs:21>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandShape.cs:21>
 		List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE* L_0 = (List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE*)il2cpp_codegen_object_new(List_1_tD8D661435D537BE5B9DB5C776B5BEEBFA6D4A5BE_il2cpp_TypeInfo_var);
 		List_1__ctor_m312247B51AAB2E901128C9CBBD5234605CF58CAD(L_0, List_1__ctor_m312247B51AAB2E901128C9CBBD5234605CF58CAD_RuntimeMethod_var);
 		__this->___m_FingerShapeConditions = L_0;
@@ -1809,7 +1809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRHandShape__ctor_m0B99E17F76B2C39882261
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 72300
+// Method Definition Index: 72341
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U24BurstDirectCallInitializer_Initialize_mECC8CD09976577EF3165CA0645A5B94E58F15085 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1829,7 +1829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U24BurstDirectCallInitializer_Initialize
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 72251
+// Method Definition Index: 72292
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UserCondition_GetReferenceDirectionU24BurstManaged_m7598FB8518D86DDA1277CE29681F4843ED506CC0_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_handPosition, int32_t ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_headTransform, float ___5_handednessMultiplier, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
@@ -1866,7 +1866,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UserCondition_GetReferenceDi
 
 IL_001f:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:139>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:139>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_1 = ___3_handTrackingOrigin;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_2 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_1);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_3;
@@ -1875,13 +1875,13 @@ IL_001f:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_4;
 		L_4 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_2, L_3, NULL);
 		V_0 = L_4;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:140>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:140>
 		goto IL_00e1;
 	}
 
 IL_0044:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:143>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:143>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_5 = ___4_headTransform;
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_6 = L_5->___pos;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_7 = ___3_handTrackingOrigin;
@@ -1893,13 +1893,13 @@ IL_0044:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_12;
 		L_12 = float3_op_Subtraction_mB6036E9849D95650D6E73DA0D179CD7B61E696F2_inline(L_6, L_11, NULL);
 		V_0 = L_12;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:144>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:144>
 		goto IL_00e1;
 	}
 
 IL_0064:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:147>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:147>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_13 = ___4_headTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_14 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_13);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_15;
@@ -1908,13 +1908,13 @@ IL_0064:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_16;
 		L_16 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_14, L_15, NULL);
 		V_0 = L_16;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:148>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:148>
 		goto IL_00e1;
 	}
 
 IL_0087:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:151>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:151>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_17 = ___4_headTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_18 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_17);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_19;
@@ -1923,13 +1923,13 @@ IL_0087:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_20;
 		L_20 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_18, L_19, NULL);
 		V_0 = L_20;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:152>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:152>
 		goto IL_00e1;
 	}
 
 IL_00aa:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:155>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:155>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_21 = ___4_headTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_22 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_21);
 		float L_23 = ___5_handednessMultiplier;
@@ -1939,19 +1939,19 @@ IL_00aa:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_25;
 		L_25 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_22, L_24, NULL);
 		V_0 = L_25;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:156>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:156>
 		goto IL_00e1;
 	}
 
 IL_00cb:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:159>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:159>
 		float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline((&V_0), (0.0f), (1.0f), (0.0f), NULL);
 	}
 
 IL_00e1:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:163>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:163>
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* L_26 = ___0_result;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_27 = ___3_handTrackingOrigin;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_28 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_27);
@@ -1962,11 +1962,11 @@ IL_00e1:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_32;
 		L_32 = math_mul_mE9E04B2868E4D4BA5BD873E4F876D550D36C2E99_inline(L_30, L_31, NULL);
 		*(float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*)L_26 = L_32;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:164>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:164>
 		return;
 	}
 }
-// Method Definition Index: 49259
+// Method Definition Index: 49300
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_transform_m5F6B69A9C0E6E1AF63D8112D8753394891972E44_inline (RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD ___0_a, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_pos, const RuntimeMethod* method) 
 {
 	{
@@ -1983,7 +1983,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_6;
 	}
 }
-// Method Definition Index: 51986
+// Method Definition Index: 52027
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Subtraction_mB6036E9849D95650D6E73DA0D179CD7B61E696F2_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_lhs, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -2006,7 +2006,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_12;
 	}
 }
-// Method Definition Index: 51954
+// Method Definition Index: 51995
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -2023,7 +2023,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_mC61002CD0EC13D
 		return;
 	}
 }
-// Method Definition Index: 49258
+// Method Definition Index: 49299
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline (RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD ___0_a, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_dir, const RuntimeMethod* method) 
 {
 	{
@@ -2036,7 +2036,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_3;
 	}
 }
-// Method Definition Index: 49255
+// Method Definition Index: 49296
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD math_inverse_mE8E0E402273F7ECC939F38F6EE83A568BF531CF8_inline (RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD ___0_t, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
@@ -2064,7 +2064,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RigidTransform_tDC22CD9569EC04E16
 		return L_9;
 	}
 }
-// Method Definition Index: 49241
+// Method Definition Index: 49282
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_mul_mE9E04B2868E4D4BA5BD873E4F876D550D36C2E99_inline (quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4 ___0_q, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_v, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
@@ -2101,7 +2101,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_16;
 	}
 }
-// Method Definition Index: 72280
+// Method Definition Index: 72321
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditionBurstedU24BurstManaged_mF415DF3978A57CA2A940DE586A021A78D5A2EE75_inline (int32_t ___0_xrHandAxis, int32_t ___1_condition, int32_t ___2_direction, float ___3_threshold, bool ___4_ignorePositionY, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___5_rootPosition, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* ___6_rootRotation, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___7_originTransform, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___8_targetTransform, float ___9_handednessMultiplier, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
@@ -2109,31 +2109,31 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditi
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:282>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:283>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:284>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:285>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:286>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:282>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:283>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:284>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:285>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:286>
 		int32_t L_0 = ___0_xrHandAxis;
 		quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* L_1 = ___6_rootRotation;
 		float L_2 = ___9_handednessMultiplier;
 		XRHandOrientationUtility_GetHandAxisDirection_m22DCBF77C9092CC37C826CBA9CE6F978ABB6EF6B((&V_0), L_0, L_1, L_2, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:288>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:289>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:290>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:291>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:292>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:293>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:288>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:289>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:290>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:291>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:292>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:293>
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* L_3 = ___5_rootPosition;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_4 = ___7_originTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_5 = ___8_targetTransform;
 		TargetCondition_GetReferenceDirection_m104D8D094C832F78EFF6FDCBC5C5A9033CB2430D((&V_1), L_3, (&___2_direction), L_4, L_5, NULL);
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:295>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:296>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:297>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:298>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:299>
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:300>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:295>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:296>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:297>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:298>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:299>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:300>
 		int32_t L_6 = ___1_condition;
 		float L_7 = ___3_threshold;
 		bool L_8 = ___4_ignorePositionY;
@@ -2142,14 +2142,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TargetCondition_CheckConditi
 		return L_9;
 	}
 }
-// Method Definition Index: 72281
+// Method Definition Index: 72322
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TargetCondition_GetReferenceDirectionU24BurstManaged_mD302D609303C01863E6C09627F1D57A6303D92E1_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___0_result, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* ___1_rootPosition, int32_t* ___2_direction, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___3_handTrackingOrigin, RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* ___4_targetTransform, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	int32_t V_1 = 0;
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:314>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:314>
 		int32_t* L_0 = ___2_direction;
 		int32_t L_1 = *((int32_t*)L_0);
 		V_1 = L_1;
@@ -2180,7 +2180,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TargetCondition_GetReference
 
 IL_001e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:317>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:317>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_3 = ___4_targetTransform;
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_4 = L_3->___pos;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_5 = ___3_handTrackingOrigin;
@@ -2192,13 +2192,13 @@ IL_001e:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_10;
 		L_10 = float3_op_Subtraction_mB6036E9849D95650D6E73DA0D179CD7B61E696F2_inline(L_4, L_9, NULL);
 		V_0 = L_10;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:318>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:318>
 		goto IL_00bd;
 	}
 
 IL_003e:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:321>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:321>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_11 = ___4_targetTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_12 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_11);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_13;
@@ -2207,13 +2207,13 @@ IL_003e:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_14;
 		L_14 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_12, L_13, NULL);
 		V_0 = L_14;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:322>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:322>
 		goto IL_00bd;
 	}
 
 IL_0061:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:325>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:325>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_15 = ___4_targetTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_16 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_15);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_17;
@@ -2222,13 +2222,13 @@ IL_0061:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_18;
 		L_18 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_16, L_17, NULL);
 		V_0 = L_18;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:326>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:326>
 		goto IL_00bd;
 	}
 
 IL_0084:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:329>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:329>
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_19 = ___4_targetTransform;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_20 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_19);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_21;
@@ -2237,19 +2237,19 @@ IL_0084:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_22;
 		L_22 = math_rotate_m8F74C2AEBBF4623BD2C671543F22101D759315AB_inline(L_20, L_21, NULL);
 		V_0 = L_22;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:330>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:330>
 		goto IL_00bd;
 	}
 
 IL_00a7:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:333>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:333>
 		float3__ctor_mC61002CD0EC13D7C37D846D021A78C028FB80DB9_inline((&V_0), (0.0f), (1.0f), (0.0f), NULL);
 	}
 
 IL_00bd:
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:337>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:337>
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* L_23 = ___0_result;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* L_24 = ___3_handTrackingOrigin;
 		RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD L_25 = (*(RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD*)L_24);
@@ -2260,20 +2260,20 @@ IL_00bd:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_29;
 		L_29 = math_mul_mE9E04B2868E4D4BA5BD873E4F876D550D36C2E99_inline(L_27, L_28, NULL);
 		*(float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E*)L_23 = L_29;
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/Gestures/XRHandRelativeOrientation.cs:338>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/Gestures/XRHandRelativeOrientation.cs:338>
 		return;
 	}
 }
-// Method Definition Index: 71701
+// Method Definition Index: 71742
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRHand_get_isTracked_mDFC9D4FDE271E2DC90D5459B1A6EA304F97B7428_inline (XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:./Library/PackageCache/com.unity.xr.hands@ff73e7abcedb/Runtime/XRHand.cs:52>
+		//<source_info:./Library/PackageCache/com.unity.xr.hands@d34c2dc56a9d/Runtime/XRHand.cs:52>
 		bool L_0 = __this->___U3CisTrackedU3Ek__BackingField;
 		return L_0;
 	}
 }
-// Method Definition Index: 62455
+// Method Definition Index: 62496
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t FunctionPointer_1_get_Value_m71D7FF781C694A7C4EE28362DFC78D8DDFE9A105_gshared_inline (FunctionPointer_1_tE1DC1EC606FB2242FB50357BBA39BB4AEDECFCB2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2290,7 +2290,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C
 		return L_0;
 	}
 }
-// Method Definition Index: 51983
+// Method Definition Index: 52024
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Addition_mFFCF4F7457594F5EFB0678C0DE90AAD3D3F6947B_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_lhs, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -2313,7 +2313,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_12;
 	}
 }
-// Method Definition Index: 49229
+// Method Definition Index: 49270
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4 math_inverse_mAB8FC214DC9438E44EB31D19E3C70D3BDFAAF202_inline (quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4 ___0_q, const RuntimeMethod* method) 
 {
 	float4_t89D9A294E7A79BD81BFBDD18654508532958555E V_0;
@@ -2342,7 +2342,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR quaternion_tD6BCBECAF088B9EBAE234
 		return L_10;
 	}
 }
-// Method Definition Index: 52009
+// Method Definition Index: 52050
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_UnaryNegation_m862876969881839716CBAF9AE074FA4BFDFABDF1_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_val, const RuntimeMethod* method) 
 {
 	{
@@ -2359,7 +2359,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_6;
 	}
 }
-// Method Definition Index: 55341
+// Method Definition Index: 55382
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RigidTransform__ctor_m7665CC6FBD784FC7CB02E48B0A4B58008A4BC709_inline (RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD* __this, quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4 ___0_rotation, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_translation, const RuntimeMethod* method) 
 {
 	{
@@ -2373,7 +2373,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RigidTransform__ctor_m7665CC
 		return;
 	}
 }
-// Method Definition Index: 52725
+// Method Definition Index: 52766
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float4_get_xyz_mE6EC829F35512C7BC159047FDC134E80F3B37A06_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2387,7 +2387,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_3;
 	}
 }
-// Method Definition Index: 48703
+// Method Definition Index: 48744
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_cross_m4CA2DAE150C6381B0D05E8AA9E48E88CF6157180_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_x, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_y, const RuntimeMethod* method) 
 {
 	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_0;
@@ -2412,7 +2412,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_7;
 	}
 }
-// Method Definition Index: 51982
+// Method Definition Index: 52023
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Multiply_m38F52B61F8E5636955A1A6DF3A75BD0724148350_inline (float ___0_lhs, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -2432,7 +2432,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_9;
 	}
 }
-// Method Definition Index: 48426
+// Method Definition Index: 48467
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_dot_m20F2285F7227DC308D9CF2DCB8EAAD3E774501D4_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_x, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -2456,7 +2456,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_dot_m20F2285F7227DC308
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11)))), ((float)il2cpp_codegen_multiply(L_13, L_15))));
 	}
 }
-// Method Definition Index: 48551
+// Method Definition Index: 48592
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_rcp_mED2BCEE83560EEE59CE06EBD90332CAFA9C08024_inline (float ___0_x, const RuntimeMethod* method) 
 {
 	{
@@ -2465,7 +2465,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_rcp_mED2BCEE83560EEE59
 		return ((float)((1.0f)/L_0));
 	}
 }
-// Method Definition Index: 52404
+// Method Definition Index: 52445
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E float4_op_Multiply_m94C65B5751B7969CD82F15DADB8A6F182BFBD581_inline (float ___0_lhs, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -2488,7 +2488,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_12;
 	}
 }
-// Method Definition Index: 47926
+// Method Definition Index: 47967
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_float4_m16697C284FA0C25A84F3DC3E99F3D4C306B6BFBF_inline (float ___0_x, float ___1_y, float ___2_z, float ___3_w, const RuntimeMethod* method) 
 {
 	{
@@ -2503,7 +2503,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_4;
 	}
 }
-// Method Definition Index: 52402
+// Method Definition Index: 52443
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E float4_op_Multiply_m0E98338FB7DFF55B101EBCD78A8703ADB9C08667_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_lhs, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -2530,7 +2530,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		return L_16;
 	}
 }
-// Method Definition Index: 49225
+// Method Definition Index: 49266
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4 math_quaternion_m315B4CA2F8475CC33F3C73187F00AC8B64BBF939_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -2542,7 +2542,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR quaternion_tD6BCBECAF088B9EBAE234
 		return L_1;
 	}
 }
-// Method Definition Index: 52116
+// Method Definition Index: 52157
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_get_yzx_mDF6DE39B69C5DE384F74C0D1EC91AA0388E23535_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2556,7 +2556,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_3;
 	}
 }
-// Method Definition Index: 51980
+// Method Definition Index: 52021
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Multiply_m05E57074FBD5FAB0E72940C9CC019C41915280D7_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___0_lhs, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_rhs, const RuntimeMethod* method) 
 {
 	{
@@ -2579,7 +2579,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 		return L_12;
 	}
 }
-// Method Definition Index: 52372
+// Method Definition Index: 52413
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4__ctor_mB2F7F2D8BCE8159BEF5A0D6400499E211858ED2D_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E* __this, float ___0_x, float ___1_y, float ___2_z, float ___3_w, const RuntimeMethod* method) 
 {
 	{
@@ -2599,7 +2599,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4__ctor_mB2F7F2D8BCE815
 		return;
 	}
 }
-// Method Definition Index: 55203
+// Method Definition Index: 55244
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void quaternion__ctor_m2F6A34CCFD1150A326CB4CE108260A8BD8B1D75F_inline (quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4* __this, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___0_value, const RuntimeMethod* method) 
 {
 	{

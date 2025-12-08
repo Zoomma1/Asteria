@@ -32,6 +32,10 @@ namespace LaserRayCasting
         [Tooltip("Layer mask pour la détection de collisions")]
         LayerMask m_LayerMask = ~0;
 
+        [SerializeField]
+        [Tooltip("Offset de position pour centrer le laser sur la main (en coordonnées locales)")]
+        Vector3 m_PositionOffset = Vector3.zero;
+
         private LineRenderer m_LineRenderer;
         private bool m_IsTriggerPressed = false;
 
@@ -99,11 +103,11 @@ namespace LaserRayCasting
 
         void UpdateLaserRay()
         {
-            // Position de départ : centre de la manette (position du transform)
-            Vector3 startPosition = transform.position;
+            // Position de départ : centre de la main avec offset configurable
+            Vector3 startPosition = transform.position + transform.TransformDirection(m_PositionOffset);
             
-            // Direction : vers l'avant de la manette (forward du transform)
-            Vector3 direction = -transform.forward;
+            // Direction : vers l'avant de la main (forward du transform)
+            Vector3 direction = transform.forward;
 
             // Effectuer un raycast
             RaycastHit hit;
