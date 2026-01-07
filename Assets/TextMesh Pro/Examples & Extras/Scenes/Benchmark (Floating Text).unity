@@ -38,21 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
-========
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
-  serializedVersion: 13
-  m_BakeOnSceneLoad: 0
-========
   serializedVersion: 11
   m_GIWorkflowMode: 1
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -234,13 +226,8 @@ Camera:
   m_GameObject: {fileID: 280649733}
   m_Enabled: 1
   serializedVersion: 2
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-========
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -280,11 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280649733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-========
   m_LocalPosition: {x: 0, y: 0, z: -107.936806}
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -302,41 +285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d687537154440a3913a9a3c7977978c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
---- !u!1 &410087039
-========
   CameraTarget: {fileID: 0}
   FollowDistance: 200
   MaxFollowDistance: 500
@@ -366,7 +314,6 @@ MonoBehaviour:
   UpdateInterval: 5
   AnchorPosition: 2
 --- !u!1 &1097136440
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -421,14 +368,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
---- !u!4 &410087041
-========
 --- !u!4 &1097136442
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,43 +380,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &410087042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410087039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 1
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
---- !u!1 &832575517
-========
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142710353
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -521,66 +427,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<<< HEAD:Assets/_Recovery/0.unity
---- !u!1 &1367416728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1367416729}
-  - component: {fileID: 1367416730}
-  m_Layer: 0
-  m_Name: StarField
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1367416729
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367416728}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1367416730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367416728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f443f8adc894ebfb20aca04481490eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StarFieldFromApi
-  apiUrl: http://localhost:8080/api/stars
-  starPrefab: {fileID: 3475767843370653730, guid: cdd241b4858debf4a8d08145f8bac728, type: 3}
-  radius: 50
-  minMag: -99
-  maxStars: 20000
-  maxMag: 99
-  minSize: 0.02
-  maxSize: 0.08
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
-  - {fileID: 410087041}
-  - {fileID: 832575519}
-  - {fileID: 1367416729}
-========
->>>>>>>> mainVR:Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity
+  - {fileID: 1097136442}
+  - {fileID: 182159566}
+  - {fileID: 2142710355}
+  - {fileID: 280649738}

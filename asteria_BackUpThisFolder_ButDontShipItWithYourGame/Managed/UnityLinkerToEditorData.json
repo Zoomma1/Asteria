@@ -66,7 +66,10 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -80,7 +83,10 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -129,7 +135,10 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -149,7 +158,10 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -169,7 +181,10 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -183,7 +198,10 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -215,7 +233,10 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -223,7 +244,10 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -249,7 +273,10 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -257,6 +284,8 @@
           {
             "name": "LineRenderer",
             "scenes": [
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
               "Assets/Scenes/MainXRScene.unity"
             ],
             "dependencyType": 0,
@@ -271,7 +300,10 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -279,6 +311,8 @@
           {
             "name": "Mesh",
             "scenes": [
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
               "Assets/Scenes/MainXRScene.unity"
             ],
             "dependencyType": 0,
@@ -287,6 +321,8 @@
           {
             "name": "MeshFilter",
             "scenes": [
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
               "Assets/Scenes/MainXRScene.unity"
             ],
             "dependencyType": 0,
@@ -295,6 +331,8 @@
           {
             "name": "MeshRenderer",
             "scenes": [
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
               "Assets/Scenes/MainXRScene.unity"
             ],
             "dependencyType": 0,
@@ -303,7 +341,10 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -317,7 +358,10 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -325,7 +369,10 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -363,7 +410,9 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -377,7 +426,10 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -409,7 +461,10 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -436,14 +491,19 @@
           },
           {
             "name": "SortingGroup",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Main_XRScene.unity",
+              "Assets/Scenes/MainMenu_XRScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -913,7 +973,9 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Main_XRScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -931,15 +993,14 @@
           },
           {
             "name": "Collider",
-            "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
             "name": "MeshCollider",
             "scenes": [
+              "Assets/Scenes/Main_XRScene.unity",
               "Assets/Scenes/MainXRScene.unity"
             ],
             "dependencyType": 0,
@@ -959,9 +1020,7 @@
           },
           {
             "name": "SphereCollider",
-            "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -1324,7 +1383,9 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1373,7 +1434,9 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1387,7 +1450,9 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/MainXRScene.unity"
+              "Assets/Scenes/MainMenu_XRScene.unity",
+              "Assets/Scenes/MainXRScene.unity",
+              "Assets/Scenes/QuizzScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
