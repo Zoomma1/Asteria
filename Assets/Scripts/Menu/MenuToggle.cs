@@ -3,16 +3,42 @@ using UnityEngine.InputSystem;
 
 public class MenuController : MonoBehaviour
 {
-    public GameObject menuCanvas; // Glisse ton Canvas ici
-    public InputActionProperty buttonA; // L'input du bouton A
+    [Header("Menu Settings")]
+    [Tooltip("The canvas to show/hide when the button is pressed")]
+    public GameObject menuCanvas;
+    
+    [Header("Input Settings")]
+    [Tooltip("Which hand's primary button to use (RightHand or LeftHand)")]
+    public string handUsage = "RightHand"; // Can be "RightHand" or "LeftHand"
+    
+    private InputAction menuToggleAction;
+
+    void OnEnable()
+    {
+        // Create a direct input action for the primary button of the specified XR Controller
+        menuToggleAction = new InputAction(
+            name: "Menu Toggle",
+            type: InputActionType.Button,
+            binding: $"<XRController>{{{handUsage}}}/primaryButton"
+        );
+        menuToggleAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        // Clean up the input action
+        menuToggleAction?.Disable();
+        menuToggleAction?.Dispose();
+    }
 
     void Update()
     {
-        // Vérifie si le bouton A vient d'être pressé
-        if (buttonA.action.WasPressedThisFrame())
+        // Check if the primary button was pressed this frame
+        if (menuToggleAction != null && menuToggleAction.WasPressedThisFrame())
         {
-            // Inverse l'état actuel du Canvas (Affiche s'il est caché, Cache s'il est affiché)
+            // Toggle the menu canvas visibility
             menuCanvas.SetActive(!menuCanvas.activeSelf);
+            Debug.Log($"Menu toggled: {menuCanvas.activeSelf}");
         }
     }
 }
