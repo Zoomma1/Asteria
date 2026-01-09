@@ -1,45 +1,18 @@
 using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
 
-public class MenuToggle : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
-    public GameObject menuCanvas;      // Glisse ton Canvas ici
-    public Transform cameraTransform; // Glisse ta Main Camera ici
-    public float distance = 2.0f;     // Distance à laquelle le menu apparaît
-    
-    // Référence à l'action du bouton (on va la configurer dans l'inspecteur)
-    public InputActionProperty menuButtonAction;
+    public GameObject menuCanvas; // Glisse ton Canvas ici
+    public InputActionProperty buttonA; // L'input du bouton A
 
     void Update()
     {
-        // Vérifie si le bouton a été pressé à cette image
-        if (menuButtonAction.action.WasPressedThisFrame())
+        // Vérifie si le bouton A vient d'être pressé
+        if (buttonA.action.WasPressedThisFrame())
         {
-            ToggleMenu();
-        }
-    }
-
-    void ToggleMenu()
-    {
-        // Inverse l'état (si actif -> devient inactif et inversement)
-        bool isActive = !menuCanvas.activeSelf;
-        menuCanvas.SetActive(isActive);
-
-        if (isActive)
-        {
-            // Positionne le menu devant la caméra
-            Vector3 targetPosition = cameraTransform.position + (cameraTransform.forward * distance);
-            
-            // Aligne la hauteur sur les yeux
-            targetPosition.y = cameraTransform.position.y;
-            
-            menuCanvas.transform.position = targetPosition;
-
-            // Fait en sorte que le menu regarde le joueur
-            Vector3 lookAtPos = cameraTransform.position;
-            lookAtPos.y = menuCanvas.transform.position.y;
-            menuCanvas.transform.LookAt(lookAtPos);
-            menuCanvas.transform.Rotate(0, 180, 0);
+            // Inverse l'état actuel du Canvas (Affiche s'il est caché, Cache s'il est affiché)
+            menuCanvas.SetActive(!menuCanvas.activeSelf);
         }
     }
 }
