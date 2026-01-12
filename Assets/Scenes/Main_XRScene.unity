@@ -329,6 +329,14 @@ PrefabInstance:
       value: Ray Interactor
       objectReference: {fileID: 0}
     - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_LineWidth
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_SmoothMovement
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_InvalidColorGradient.atime0
       value: 0
       objectReference: {fileID: 0}
@@ -345,11 +353,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_InvalidColorGradient.ctime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_InvalidColorGradient.key0.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_InvalidColorGradient.key1.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_OverrideInteractorLineLength
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
@@ -405,6 +421,22 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_HitDetectionType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_SphereCastRadius
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_UIScrollInput.m_InputActionReference
       value: 
       objectReference: {fileID: -6756787485274679044, guid: c348712bda248c246b8c49b3db54643f, type: 3}
@@ -416,10 +448,37 @@ PrefabInstance:
       propertyPath: m_UIPressInput.m_InputActionReferencePerformed
       value: 
       objectReference: {fileID: 3279264004350380116, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.7490196
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.682353
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.1882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_Parameters.colorGradient.m_ColorSpace
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1787346994484839025, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1313866913}
   m_SourcePrefab: {fileID: 100100000, guid: ad818c36731146e994540a1896ad8f24, type: 3}
 --- !u!4 &242129625 stripped
 Transform:
@@ -1553,6 +1612,45 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f3369e30fbd31f4bb596b1a99babe83, type: 3}
+--- !u!1 &1313866907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1787346994484839025, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+  m_PrefabInstance: {fileID: 242129624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!120 &1313866911 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+  m_PrefabInstance: {fileID: 242129624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1313866912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+  m_PrefabInstance: {fileID: 242129624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313866907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1313866913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313866907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFieldInteraction.RayVisibilityController
+  lineRenderer: {fileID: 1313866911}
+  rayInteractor: {fileID: 1313866912}
+  enableRay: 0
+  activationThreshold: 0.5
+  useGripButton: 0
+  useTriggerButton: 1
 --- !u!1 &1404027218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,6 +1682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   menuCanvas: {fileID: 312287350}
   handUsage: RightHand
+  rayController: {fileID: 1313866913}
 --- !u!4 &1404027220
 Transform:
   m_ObjectHideFlags: 0
@@ -1871,6 +1970,7 @@ GameObject:
   - component: {fileID: 1614682254}
   - component: {fileID: 1614682253}
   - component: {fileID: 1614682252}
+  - component: {fileID: 1614682255}
   m_Layer: 0
   m_Name: VR Player
   m_TagString: Untagged
@@ -1927,6 +2027,19 @@ Transform:
   - {fileID: 1464758161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1614682255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614682251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5fe3f4d38ba845b3745c6aa8b8111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VRControllerInputs
+  buttonThreshold: 0.5
 --- !u!1 &1721715646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,12 +2113,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759441186}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f443f8adc894ebfb20aca04481490eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StarFieldFromApi
-  apiUrl: http://localhost:8080/AsteriaAPI/stars
+  apiUrl: https://asteria-api.duckdns.org/AsteriaAPI/stars
   starPrefab: {fileID: 3475767843370653730, guid: cdd241b4858debf4a8d08145f8bac728, type: 3}
   radius: 50
   minMag: -2

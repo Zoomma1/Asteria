@@ -1,13 +1,21 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using DTO;
 
-namespace StarField
+namespace StarFieldInteraction
 {
-    public class StarFieldFromApi : MonoBehaviour
+    /// <summary>
+    /// VERSION MODIFIÉE pour XR Interaction Toolkit
+    /// Cette copie contient les modifications nécessaires pour activer les interactions VR.
+    /// 
+    /// INSTRUCTIONS :
+    /// 1. Remplace "StarFieldFromApi" par "StarFieldFromApiXR" dans ta scène
+    /// 2. Ou copie les lignes marquées [À AJOUTER] dans ton StarFieldGenerator.cs original
+    /// </summary>
+    public class StarFieldFromApiXR : MonoBehaviour
     {
-        [SerializeField] private string apiUrl = "https://asteria-api.duckdns.org/AsteriaAPI/stars";
+        [SerializeField] private string apiUrl = "http://localhost:8080/api/stars";
         [SerializeField] private GameObject starPrefab;
         [SerializeField] private float radius = 50f;
         [SerializeField] private float minMag = -1.5f;
@@ -70,24 +78,44 @@ namespace StarField
                     float scale = Mathf.Lerp(minSize, maxSize, t);
                     star.transform.localScale = Vector3.one * scale;
 
-                    star.name = s.proper;
+                    // Nom de l'étoile
+                    string displayName = !string.IsNullOrEmpty(s.proper) ? s.proper : $"HIP {s.hip}";
+                    star.name = displayName;
                     
-                    // Enlarge collider for easier XR interaction
+                    // ========================================
+                    // [À AJOUTER] SECTION XR INTERACTION
+                    // ========================================
+                    
+                    // 1. S'assurer qu'il y a un collider pour les interactions
                     Collider collider = star.GetComponent<Collider>();
-                    if (collider != null && collider is BoxCollider boxCol)
+                    if (collider == null)
                     {
+                        BoxCollider boxCol = star.AddComponent<BoxCollider>();
+                        // Agrandir légèrement pour faciliter la sélection
                         boxCol.size = Vector3.one * 1.5f;
                     }
+                    else
+                    {
+                        // Si le collider existe déjà, on peut l'agrandir
+                        if (collider is BoxCollider boxCol)
+                        {
+                            boxCol.size = Vector3.one * 1.5f;
+                        }
+                    }
                     
-                    // Add XR interaction component
-                    StarFieldInteraction.StarInteractableSimple interactable = star.AddComponent<StarFieldInteraction.StarInteractableSimple>();
+                    // 2. Ajouter le composant d'interaction XR Toolkit
+                    StarInteractableSimple interactable = star.AddComponent<StarInteractableSimple>();
                     
-                    string displayName = !string.IsNullOrEmpty(s.proper) ? s.proper : $"HIP {s.hip}";
+                    // 3. Remplir les données de l'étoile
                     interactable.starName = displayName;
                     interactable.hipId = s.hip;
                     interactable.rightAscension = s.ra;
                     interactable.declination = s.dec;
                     interactable.magnitude = s.mag;
+                    
+                    // ========================================
+                    // FIN SECTION XR INTERACTION
+                    // ========================================
                 }
             }
         }
@@ -108,3 +136,4 @@ namespace StarField
 
     }
 }
+
