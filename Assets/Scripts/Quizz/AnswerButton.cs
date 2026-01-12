@@ -1,6 +1,4 @@
-﻿// This script is for the buttons the answers will go on
-
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class AnswerButton : MonoBehaviour

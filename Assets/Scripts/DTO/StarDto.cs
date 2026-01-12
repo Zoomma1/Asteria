@@ -1,15 +1,12 @@
-﻿[System.Serializable]
-public class StarDto
+﻿namespace DTO
 {
-    public string id;
-    public string name;
-    public float raHours;
-    public float decDeg;
-    public float mag;
-}
-
-[System.Serializable]
-public class StarApiResponse
-{
-    public StarDto[] stars;
+    [System.Serializable]
+    public class StarDto
+    {
+        public int hip;
+        public string proper;
+        public double ra;
+        public double dec;
+        public double mag;
+    }
 }
