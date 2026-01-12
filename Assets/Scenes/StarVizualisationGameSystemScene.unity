@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f443f8adc894ebfb20aca04481490eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StarFieldFromApi
-  apiUrl: http://localhost:8080/api/stars
+  apiUrl: https://asteria-api.duckdns.org/api/stars
   starPrefab: {fileID: 3475767843370653730, guid: cdd241b4858debf4a8d08145f8bac728, type: 3}
   radius: 50
   minMag: -99

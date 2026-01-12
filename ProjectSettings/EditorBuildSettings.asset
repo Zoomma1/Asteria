@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StarVizualisationGameSystemScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 4ba225f95a4e3da46a5857b56b63d4a7
+  - enabled: 1
+    path: Assets/Scenes/QuizzScene.unity
+    guid: a2a93d1e6ffb8c7429ee5aec51d67764
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: d5bdf5eaa49780e41abf4371e9ff73ee
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c71ba603b4ddd054ea5a45c1e6615145, type: 2}

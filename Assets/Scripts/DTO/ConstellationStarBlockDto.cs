@@ -3,6 +3,5 @@
     [System.Serializable]
     public class ConstellationStarBlock
     {
-        public 
     }
 }
