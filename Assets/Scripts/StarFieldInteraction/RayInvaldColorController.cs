@@ -34,6 +34,10 @@ namespace StarFieldInteraction
                 lineVisual = GetComponent<XRInteractorLineVisual>();
             }
             
+            // S'assurer que le mode manuel est désactivé au démarrage
+            overrideWithManualControl = false;
+            manualVisibility = false;
+            
             // Create transparent gradient (invisible)
             transparentGradient = new Gradient();
             GradientColorKey[] transparentColorKeys = new GradientColorKey[2];
@@ -57,34 +61,33 @@ namespace StarFieldInteraction
             visibleAlphaKeys[1] = new GradientAlphaKey(0f, 1f); // Fully transparent at end (fade effect)
             
             visibleGradient.SetKeys(visibleColorKeys, visibleAlphaKeys);
-            
-            Debug.Log("[RayColorController] Gradients initialized with fade effect");
         }
         
     private void Update()
     {
         if (lineVisual == null) return;
         
-        // Determine if ray should be visible
-        bool shouldShowRay;
-        
+        // SI le mode manuel est activé, ne rien faire ici
+        // Un autre script gère la visibilité
         if (overrideWithManualControl)
         {
-            // Use manual control from Inspector
-            shouldShowRay = manualVisibility;
-        }
-        else
-        {
-            // Use right trigger input
-            if (VRControllerInputs.Instance != null)
+            // Appliquer le gradient manuel
+            if (manualVisibility)
             {
-                shouldShowRay = VRControllerInputs.Instance.IsRightTriggerPressed;
+                lineVisual.invalidColorGradient = visibleGradient;
             }
             else
             {
-                Debug.LogWarning("[RayColorController] VRControllerInputs instance not found!");
-                shouldShowRay = false;
+                lineVisual.invalidColorGradient = transparentGradient;
             }
+            return;
+        }
+        
+        // Mode automatique : contrôle par le trigger
+        bool shouldShowRay = false;
+        if (VRControllerInputs.Instance != null)
+        {
+            shouldShowRay = VRControllerInputs.Instance.IsRightTriggerPressed;
         }
         
         // Apply gradient based on visibility state
@@ -114,6 +117,12 @@ namespace StarFieldInteraction
     {
         overrideWithManualControl = true;
         manualVisibility = visible;
+        
+        // Appliquer immédiatement le gradient
+        if (lineVisual != null)
+        {
+            lineVisual.invalidColorGradient = visible ? visibleGradient : transparentGradient;
+        }
     }
     
     /// <summary>
@@ -138,6 +147,14 @@ namespace StarFieldInteraction
     public void UseAutomaticTriggerControl()
     {
         overrideWithManualControl = false;
+        manualVisibility = false;
+        
+        // Appliquer immédiatement le gradient transparent si trigger pas appuyé
+        if (lineVisual != null && VRControllerInputs.Instance != null)
+        {
+            bool triggerPressed = VRControllerInputs.Instance.IsRightTriggerPressed;
+            lineVisual.invalidColorGradient = triggerPressed ? visibleGradient : transparentGradient;
+        }
     }
     }
 }

@@ -421,16 +421,20 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
-      propertyPath: m_HitDetectionType
+      propertyPath: m_ConeCastAngle
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+      propertyPath: m_HitDetectionType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_SphereCastRadius
-      value: 0.05
+      value: 0.082
       objectReference: {fileID: 0}
     - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_MaxRaycastDistance
-      value: 1000
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_RaycastMask.m_Bits
@@ -454,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
@@ -616,7 +620,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312287350}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
   m_Name: 
@@ -1617,22 +1621,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1787346994484839025, guid: ad818c36731146e994540a1896ad8f24, type: 3}
   m_PrefabInstance: {fileID: 242129624}
   m_PrefabAsset: {fileID: 0}
---- !u!120 &1313866911 stripped
-LineRenderer:
-  m_CorrespondingSourceObject: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
-  m_PrefabInstance: {fileID: 242129624}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1313866912 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7462879561657043759, guid: ad818c36731146e994540a1896ad8f24, type: 3}
-  m_PrefabInstance: {fileID: 242129624}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313866907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1313866913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1642,15 +1630,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1313866907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3, type: 3}
+  m_Script: {fileID: 11500000, guid: b9fb4906ad6000e499b4c947aa978841, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StarFieldInteraction.RayVisibilityController
-  lineRenderer: {fileID: 1313866911}
-  rayInteractor: {fileID: 1313866912}
-  enableRay: 0
-  activationThreshold: 0.5
-  useGripButton: 0
-  useTriggerButton: 1
+  m_EditorClassIdentifier: Assembly-CSharp::StarFieldInteraction.RayColorController
+  lineVisual: {fileID: 1313866916}
+  overrideWithManualControl: 0
+  manualVisibility: 0
+--- !u!114 &1313866916 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4924506573850889901, guid: ad818c36731146e994540a1896ad8f24, type: 3}
+  m_PrefabInstance: {fileID: 242129624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313866907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1404027218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,7 +1678,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuController
   menuCanvas: {fileID: 312287350}
   handUsage: RightHand
-  rayController: {fileID: 1313866913}
 --- !u!4 &1404027220
 Transform:
   m_ObjectHideFlags: 0
