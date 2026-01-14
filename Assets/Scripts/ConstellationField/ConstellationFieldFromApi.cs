@@ -126,7 +126,6 @@ public class ConstellationFieldFromApi : MonoBehaviour
             if (starTransform != null)
             {
                 starTransform.localPosition = newLocalPos;
-                // Ajuster la rotation billboard vers le centre relatif
                 starTransform.rotation = Quaternion.LookRotation(-newLocalPos);
             }
         }
