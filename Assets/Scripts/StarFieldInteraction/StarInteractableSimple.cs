@@ -71,6 +71,7 @@ namespace StarFieldInteraction
                 rightAscension = starData.rightAscension;
                 declination = starData.declination;
                 magnitude = starData.magnitude;
+                constellationName = starData.constellationName;
                 
                 Debug.Log($"[StarInteractable] Auto-fetched data for {gameObject.name}: {starName}, HIP {hipId}");
             }
@@ -155,4 +156,3 @@ namespace StarFieldInteraction
         }
     }
 }
-

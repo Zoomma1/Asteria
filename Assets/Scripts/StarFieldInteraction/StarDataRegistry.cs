@@ -22,14 +22,16 @@ namespace StarFieldInteraction
             public double rightAscension;
             public double declination;
             public double magnitude;
+            public string constellationName;
             
-            public StarData(string name, int hipId, double ra, double dec, double mag)
+            public StarData(string name, int hipId, double ra, double dec, double mag, string constellationName = "")
             {
                 this.name = name;
                 this.hipId = hipId;
                 this.rightAscension = ra;
                 this.declination = dec;
                 this.magnitude = mag;
+                this.constellationName = constellationName;
             }
         }
         
@@ -52,7 +54,7 @@ namespace StarFieldInteraction
         /// Register a star in the database
         /// Called by star generation scripts (StarFieldFromApi, ConstellationFieldFromApi)
         /// </summary>
-        public void RegisterStar(int hipId, string name, double ra, double dec, double mag)
+        public void RegisterStar(int hipId, string name, double ra, double dec, double mag, string constellationName = "")
         {
             if (hipId <= 0)
             {
@@ -62,7 +64,7 @@ namespace StarFieldInteraction
             
             if (!starDatabase.ContainsKey(hipId))
             {
-                starDatabase[hipId] = new StarData(name, hipId, ra, dec, mag);
+                starDatabase[hipId] = new StarData(name, hipId, ra, dec, mag, constellationName);
                 Debug.Log($"[StarDataRegistry] Registered star HIP {hipId}: {name}");
             }
         }

@@ -84,7 +84,7 @@ namespace StarField
                     if (StarFieldInteraction.StarDataRegistry.Instance != null)
                     {
                         StarFieldInteraction.StarDataRegistry.Instance.RegisterStar(
-                            s.hip, displayName, s.ra, s.dec, s.mag
+                            s.hip, displayName, s.ra, s.dec, s.mag, s.constellationName
                         );
                     }
                     
@@ -96,6 +96,7 @@ namespace StarField
                     interactable.rightAscension = s.ra;
                     interactable.declination = s.dec;
                     interactable.magnitude = s.mag;
+                    interactable.constellationName = s.constellationName;
                 }
             }
         }
