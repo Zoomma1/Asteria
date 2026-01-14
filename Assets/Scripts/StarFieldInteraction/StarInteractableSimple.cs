@@ -64,10 +64,19 @@ namespace StarFieldInteraction
             string displayName = !string.IsNullOrEmpty(starName) ? starName : $"HIP {hipId}";
             Debug.Log($"SELECT ENTERED → {displayName} - STAR SELECTED!");
             
-            Renderer renderer = GetComponent<Renderer>();
-            if (renderer != null)
+            // Notify the StarSelectionManager
+            if (StarSelectionManager.Instance != null)
             {
-                renderer.material.color = Color.yellow;
+                StarSelectionManager.Instance.OnStarSelected(this);
+            }
+            else
+            {
+                // Fallback to yellow if no manager
+                Renderer renderer = GetComponent<Renderer>();
+                if (renderer != null)
+                {
+                    renderer.material.color = Color.yellow;
+                }
             }
         }
 
@@ -78,10 +87,19 @@ namespace StarFieldInteraction
             string displayName = !string.IsNullOrEmpty(starName) ? starName : $"HIP {hipId}";
             Debug.Log($"SELECT EXITED → {displayName}");
             
-            Renderer renderer = GetComponent<Renderer>();
-            if (renderer != null)
+            // Notify the StarSelectionManager
+            if (StarSelectionManager.Instance != null)
             {
-                renderer.material.color = Color.white;
+                StarSelectionManager.Instance.OnStarDeselected(this);
+            }
+            else
+            {
+                // Fallback to white if no manager
+                Renderer renderer = GetComponent<Renderer>();
+                if (renderer != null)
+                {
+                    renderer.material.color = Color.white;
+                }
             }
         }
     }
