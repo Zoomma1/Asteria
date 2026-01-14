@@ -102,7 +102,7 @@ public class ConstellationFieldFromApi : MonoBehaviour
             if (StarFieldInteraction.StarDataRegistry.Instance != null)
             {
                 StarFieldInteraction.StarDataRegistry.Instance.RegisterStar(
-                    star.hip, displayName, star.ra, star.dec, star.mag
+                    star.hip, displayName, star.ra, star.dec, star.mag, star.constellationName
                 );
             }
         }
