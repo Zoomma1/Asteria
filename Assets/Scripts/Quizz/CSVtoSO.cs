@@ -16,8 +16,9 @@ public class CVStoSO
 
         string[] allLines = File.ReadAllLines(Application.dataPath + questionsCSVPath);
 
-        foreach (string s in allLines)
+        for (int lineIndex = 1; lineIndex < allLines.Length; lineIndex++)
         {
+            string s = allLines[lineIndex];
             string[] splitData = s.Split(';');
 
             // CSV (COMMA SEPARATED VALUE) DATA FORMAT
@@ -35,6 +36,7 @@ public class CVStoSO
 
             for (int i = 0; i < numberOfAnswers; i++)
             {
+                Debug.Log(splitData[i]);
                 questionData.answers[i] = splitData[1 + i];
             }
 
