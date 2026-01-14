@@ -23,7 +23,6 @@ public class AnswerButton : MonoBehaviour
     {
         if(isCorrect)
         {
-            Debug.Log("CORRECT ANSWER");
             if (questionSetup.questions.Count > 0)
             {
                 // Generate a new question
@@ -32,7 +31,6 @@ public class AnswerButton : MonoBehaviour
         }
         else
         {
-            Debug.Log("WRONG ANSWER");
             questionSetup.wrongAnswersText.enabled = true;
         }
 

@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using LaserRayCasting;
-using Interface.ConstellationInfo;
 using DTO;
 
 namespace Interface.ConstellationInfo
@@ -12,7 +10,7 @@ namespace Interface.ConstellationInfo
     public class LaserConstellationInfo : MonoBehaviour
     {
         [Header("Références")]
-        [SerializeField] private LaserRayController laserController;
+        [SerializeField] private global::LaserRayController laserController;
         [SerializeField] private LayerMask constellationLayer = -1;
         [SerializeField] private ConstellationInfoUI constellationInfoUI;
         
@@ -21,7 +19,7 @@ namespace Interface.ConstellationInfo
         void Start()
         {
             if (laserController == null)
-                laserController = GetComponent<LaserRayController>();
+                laserController = GetComponent<global::LaserRayController>();
             
             // Si l'UI n'est pas assignée, la chercher dans la scène
             if (constellationInfoUI == null)
