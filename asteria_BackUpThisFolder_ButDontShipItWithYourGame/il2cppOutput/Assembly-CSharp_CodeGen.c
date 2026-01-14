@@ -410,13 +410,13 @@ extern void RayColorController__ctor_mC7B67EAC5E6822B77026D76E08E623383F79F6D8 (
 extern void StarDataRegistry_get_Instance_m5F89EA6F6FBFCCD58AF75AEF0A80F098982249E9 (void);
 extern void StarDataRegistry_set_Instance_m0DD7D4614D0C1E86FFD10C43F53762EB746BF3F4 (void);
 extern void StarDataRegistry_Awake_m9F3AA68799B951247CE47A7BF8233BA3616C8468 (void);
-extern void StarDataRegistry_RegisterStar_m208BE7D1B8D3E4F10E82E43BB1C96EB3E97B9C81 (void);
+extern void StarDataRegistry_RegisterStar_m52B1D8917CD939D1867B534F22D3DBBC51A08EA1 (void);
 extern void StarDataRegistry_GetStarData_m10737707D4A59BC409B73DCE98E6BE24CBEA5987 (void);
 extern void StarDataRegistry_HasStar_m9F6E9BAAC6C3C7C0CE3AB2B1540270D619E461D3 (void);
 extern void StarDataRegistry_GetStarCount_mE3BA9B80686B00006C51F4DD4A61DC4094347352 (void);
 extern void StarDataRegistry_ExtractHipIdFromName_m8CADBEECBB56708FC894933ADFB4A2FE014B3E23 (void);
 extern void StarDataRegistry__ctor_m1A82CE237674E4A19DE15E4D00871A568732D7D1 (void);
-extern void StarData__ctor_m66B492A9DE851F0F7962091317224FC7CD50DCDD (void);
+extern void StarData__ctor_mD0872A2147B76F359E074B17BDDCC3419070F6AA (void);
 extern void StarInteractableSimple_Awake_m8CF52A21613A2625B40A530AD1159459F3AB2C5B (void);
 extern void StarInteractableSimple_AutoFetchStarData_m65A56875F61044BA360984DA7A4626D9C16C99A2 (void);
 extern void StarInteractableSimple_Start_m5A820A08AC2CF398738B54B2D54ED6157B0FA8E9 (void);
@@ -465,7 +465,9 @@ extern void U3CLoadStarsFromApiU3Ed__9_U3CU3Em__Finally1_m36A0DAE9BEDD58C5BA6AE0
 extern void U3CLoadStarsFromApiU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE5D335A47EBBC4D440CFFC20D892D8209FAAAB11 (void);
 extern void U3CLoadStarsFromApiU3Ed__9_System_Collections_IEnumerator_Reset_m90C7E68DC26ACE27B4A5313C5EA3344681F4F09D (void);
 extern void U3CLoadStarsFromApiU3Ed__9_System_Collections_IEnumerator_get_Current_m716D1642260D5707EBBC29520149A5BC9FED1E7D (void);
+extern void LazyFollow_Start_mC81AB80AD829550DAA83B03C150F07AE98CF1317 (void);
 extern void LazyFollow_Update_m6B583E81FB9576D7929A7F10294028AA6D4DBC48 (void);
+extern void LazyFollow_IsMenuVisible_m8CFF36F8DDAA0B0356A4E922D45BB369461F8C7C (void);
 extern void LazyFollow__ctor_m37C49E9D1341E91EB90961D32562565B0E7FD3FB (void);
 extern void ConstellationData_Init_mEF18FA3417038E683004E6BC32EDB8E81A6E4E66 (void);
 extern void ConstellationData_get_ConstellationName_mC05CCF619F76FD0121731D039DDD0533A0F0FE99 (void);
@@ -511,7 +513,7 @@ extern void LinkedStarListDto__ctor_m98BF75336A57A387602D4BDD8424534976199373 (v
 extern void StarApiResponseDto__ctor_mF70C78B5434223E21E052CAD1456BC4E15D8C5A5 (void);
 extern void StarDto__ctor_m83D6D9948CFFC4EF8028C167844380017F003047 (void);
 extern void StarListDto__ctor_m4ABDF3B63C922DB89A0D72E9B1A180719095A94B (void);
-static Il2CppMethodPointer s_methodPointers[504] = 
+static Il2CppMethodPointer s_methodPointers[506] = 
 {
 	ConstellationFieldFromApi_Start_m90E4209427A2A6BF2273D7E9D1F782FA8654C49F,
 	ConstellationFieldFromApi_LoadConstellations_m6F9748CA37A698334073ED443C0BE6CDA0D3AF8E,
@@ -916,13 +918,13 @@ static Il2CppMethodPointer s_methodPointers[504] =
 	StarDataRegistry_get_Instance_m5F89EA6F6FBFCCD58AF75AEF0A80F098982249E9,
 	StarDataRegistry_set_Instance_m0DD7D4614D0C1E86FFD10C43F53762EB746BF3F4,
 	StarDataRegistry_Awake_m9F3AA68799B951247CE47A7BF8233BA3616C8468,
-	StarDataRegistry_RegisterStar_m208BE7D1B8D3E4F10E82E43BB1C96EB3E97B9C81,
+	StarDataRegistry_RegisterStar_m52B1D8917CD939D1867B534F22D3DBBC51A08EA1,
 	StarDataRegistry_GetStarData_m10737707D4A59BC409B73DCE98E6BE24CBEA5987,
 	StarDataRegistry_HasStar_m9F6E9BAAC6C3C7C0CE3AB2B1540270D619E461D3,
 	StarDataRegistry_GetStarCount_mE3BA9B80686B00006C51F4DD4A61DC4094347352,
 	StarDataRegistry_ExtractHipIdFromName_m8CADBEECBB56708FC894933ADFB4A2FE014B3E23,
 	StarDataRegistry__ctor_m1A82CE237674E4A19DE15E4D00871A568732D7D1,
-	StarData__ctor_m66B492A9DE851F0F7962091317224FC7CD50DCDD,
+	StarData__ctor_mD0872A2147B76F359E074B17BDDCC3419070F6AA,
 	StarInteractableSimple_Awake_m8CF52A21613A2625B40A530AD1159459F3AB2C5B,
 	StarInteractableSimple_AutoFetchStarData_m65A56875F61044BA360984DA7A4626D9C16C99A2,
 	StarInteractableSimple_Start_m5A820A08AC2CF398738B54B2D54ED6157B0FA8E9,
@@ -971,7 +973,9 @@ static Il2CppMethodPointer s_methodPointers[504] =
 	U3CLoadStarsFromApiU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE5D335A47EBBC4D440CFFC20D892D8209FAAAB11,
 	U3CLoadStarsFromApiU3Ed__9_System_Collections_IEnumerator_Reset_m90C7E68DC26ACE27B4A5313C5EA3344681F4F09D,
 	U3CLoadStarsFromApiU3Ed__9_System_Collections_IEnumerator_get_Current_m716D1642260D5707EBBC29520149A5BC9FED1E7D,
+	LazyFollow_Start_mC81AB80AD829550DAA83B03C150F07AE98CF1317,
 	LazyFollow_Update_m6B583E81FB9576D7929A7F10294028AA6D4DBC48,
+	LazyFollow_IsMenuVisible_m8CFF36F8DDAA0B0356A4E922D45BB369461F8C7C,
 	LazyFollow__ctor_m37C49E9D1341E91EB90961D32562565B0E7FD3FB,
 	ConstellationData_Init_mEF18FA3417038E683004E6BC32EDB8E81A6E4E66,
 	ConstellationData_get_ConstellationName_mC05CCF619F76FD0121731D039DDD0533A0F0FE99,
@@ -1018,7 +1022,7 @@ static Il2CppMethodPointer s_methodPointers[504] =
 	StarDto__ctor_m83D6D9948CFFC4EF8028C167844380017F003047,
 	StarListDto__ctor_m4ABDF3B63C922DB89A0D72E9B1A180719095A94B,
 };
-static const int32_t s_InvokerIndices[504] = 
+static const int32_t s_InvokerIndices[506] = 
 {
 	13996,
 	13803,
@@ -1423,13 +1427,13 @@ static const int32_t s_InvokerIndices[504] =
 	23938,
 	22825,
 	13996,
-	823,
+	436,
 	9135,
 	7494,
 	13739,
 	22304,
 	13996,
-	852,
+	454,
 	13996,
 	13996,
 	13996,
@@ -1480,6 +1484,8 @@ static const int32_t s_InvokerIndices[504] =
 	13803,
 	13996,
 	13996,
+	13612,
+	13996,
 	10647,
 	13803,
 	13803,
@@ -1529,7 +1535,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	504,
+	506,
 	s_methodPointers,
 	0,
 	NULL,

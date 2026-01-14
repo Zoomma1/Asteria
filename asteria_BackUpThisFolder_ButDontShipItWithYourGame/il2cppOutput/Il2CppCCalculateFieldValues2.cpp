@@ -2654,6 +2654,7 @@ struct StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947  : public RuntimeObjec
 	double ___rightAscension;
 	double ___declination;
 	double ___magnitude;
+	String_t* ___constellationName;
 };
 struct U3CLoadStarsFromApiU3Ed__9_t5585DAF2A5F4437C2741B600E280B1828906EA35  : public RuntimeObject
 {
@@ -31170,12 +31171,16 @@ struct LaserRayController_t9731D0D6E6E9BC92B06FD422C9BA659023838591  : public Mo
 struct LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___cameraToFollow;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___viewCamera;
 	float ___distance;
 	float ___xOffset;
 	float ___yOffset;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rotationOffset;
 	float ___smoothSpeed;
-	float ___angleThreshold;
+	bool ___applyInitialTransformOnStart;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___initialPosition;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___initialEulerRotation;
+	float ___viewportMargin;
 };
 struct LocomotionProvider_t359A39ECDB2224E3FF09583CF055A3D19A3557BD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -41105,9 +41110,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8289[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8290[5] = 
 {
 	static_cast<int32_t>(offsetof(RayColorController_t206449DB650FF1B0B58113A372F2DD8CF21BD5AE, ___lineVisual)),static_cast<int32_t>(offsetof(RayColorController_t206449DB650FF1B0B58113A372F2DD8CF21BD5AE, ___overrideWithManualControl)),static_cast<int32_t>(offsetof(RayColorController_t206449DB650FF1B0B58113A372F2DD8CF21BD5AE, ___manualVisibility)),static_cast<int32_t>(offsetof(RayColorController_t206449DB650FF1B0B58113A372F2DD8CF21BD5AE, ___transparentGradient)),static_cast<int32_t>(offsetof(RayColorController_t206449DB650FF1B0B58113A372F2DD8CF21BD5AE, ___visibleGradient)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8291[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8291[6] = 
 {
-	static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___name)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___hipId)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___rightAscension)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___declination)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___magnitude)),};
+	static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___name)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___hipId)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___rightAscension)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___declination)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___magnitude)),static_cast<int32_t>(offsetof(StarData_t2EF345F7A759D17DB50E5E047EF2C39113692947, ___constellationName)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8292[2] = 
 {
 	static_cast<int32_t>(offsetof(StarDataRegistry_tB318ECD695E20553226F1CCC03688AE54B59F776_StaticFields, ___U3CInstanceU3Ek__BackingField)),static_cast<int32_t>(offsetof(StarDataRegistry_tB318ECD695E20553226F1CCC03688AE54B59F776, ___starDatabase)),};
@@ -41129,9 +41134,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8297[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8298[8] = 
 {
 	static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___apiUrl)),static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___starPrefab)),static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___radius)),static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___minMag)),static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___maxStars)),static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___maxMag)),static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___minSize)),static_cast<int32_t>(offsetof(StarFieldFromApi_tD9DFE86AF00A9213AB59FFE10BAD4884FCD3463A, ___maxSize)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8299[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8299[11] = 
 {
-	static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___cameraToFollow)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___distance)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___xOffset)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___yOffset)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___rotationOffset)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___smoothSpeed)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___angleThreshold)),};
+	static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___cameraToFollow)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___viewCamera)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___distance)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___xOffset)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___yOffset)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___rotationOffset)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___smoothSpeed)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___applyInitialTransformOnStart)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___initialPosition)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___initialEulerRotation)),static_cast<int32_t>(offsetof(LazyFollow_t503718BB21CF9259C4C206B69685199E75DC47FA, ___viewportMargin)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8300[7] = 
 {
 	static_cast<int32_t>(offsetof(ConstellationData_t190AD19A49F3DDDCE14FF0693BC89C98B25E6F0B, ___Constellation)),static_cast<int32_t>(offsetof(ConstellationData_t190AD19A49F3DDDCE14FF0693BC89C98B25E6F0B, ____renderers)),static_cast<int32_t>(offsetof(ConstellationData_t190AD19A49F3DDDCE14FF0693BC89C98B25E6F0B, ____originalRendererColors)),static_cast<int32_t>(offsetof(ConstellationData_t190AD19A49F3DDDCE14FF0693BC89C98B25E6F0B, ____lineRenderers)),static_cast<int32_t>(offsetof(ConstellationData_t190AD19A49F3DDDCE14FF0693BC89C98B25E6F0B, ____originalLineStartColors)),static_cast<int32_t>(offsetof(ConstellationData_t190AD19A49F3DDDCE14FF0693BC89C98B25E6F0B, ____originalLineEndColors)),static_cast<int32_t>(offsetof(ConstellationData_t190AD19A49F3DDDCE14FF0693BC89C98B25E6F0B, ____isHighlighted)),};

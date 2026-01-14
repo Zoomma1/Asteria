@@ -6,29 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Game systems demo scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/MainMenu_XRScene.unity
+    path: Assets/Scenes/Game systems demo scenes/MainMenu_XRScene.unity
     guid: c860f540797af074d8f1d295ee69daf4
   - enabled: 0
-    path: Assets/Scenes/Main_XRScene.unity
+    path: Assets/Scenes/Game systems demo scenes/Main_XRScene.unity
     guid: 9d4bc9eaec0e1ab4d93246cc5c2172d3
   - enabled: 0
     path: Assets/Scenes/QuizzScene.unity
-    guid: 6ce7218de0a37db4cbb9b2621d411eee
+    guid: 740f7448f3d7c0e439a9814bf0944a00
   - enabled: 0
-    path: Assets/Scenes/MainXRScene.unity
+    path: Assets/Scenes/Game systems demo scenes/MainXRScene.unity
     guid: aec99e5fa0ee16d4ba63355757a97627
   - enabled: 0
     path: Assets/Scenes/MainMenu XR.unity
     guid: 2eb1fc8be19cd044ab9c7e721de4dc26
   - enabled: 1
-    path: Assets/Scenes/1-Main.unity
-    guid: f7b5ed2b520ca9e418bc20007e38a0de
-  - enabled: 1
     path: Assets/Scenes/0-MainMenu.unity
     guid: 810a1d9cccca05943855a857cb6c166e
+  - enabled: 1
+    path: Assets/Scenes/1-Main.unity
+    guid: f7b5ed2b520ca9e418bc20007e38a0de
   - enabled: 1
     path: Assets/Scenes/2-Quiz.unity
     guid: 57c9ca34bd5ff8b4db72d5a1246e564c
