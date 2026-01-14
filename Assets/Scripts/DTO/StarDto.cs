@@ -8,5 +8,6 @@
         public double ra;
         public double dec;
         public double mag;
+        public string constellationName = "";
     }
 }
