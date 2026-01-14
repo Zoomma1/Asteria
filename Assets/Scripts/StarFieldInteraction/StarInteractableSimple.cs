@@ -36,6 +36,12 @@ namespace StarFieldInteraction
             string displayName = !string.IsNullOrEmpty(starName) ? starName : $"HIP {hipId}";
             Debug.Log($"HOVER ENTERED → {displayName} (RA: {rightAscension:F2}h, Dec: {declination:F2}°, Mag: {magnitude:F2})");
             
+            // Notify the StarSelectionManager that this star is hovered
+            if (StarSelectionManager.Instance != null)
+            {
+                StarSelectionManager.Instance.OnStarHovered(this);
+            }
+            
             Renderer renderer = GetComponent<Renderer>();
             if (renderer != null)
             {
@@ -50,6 +56,12 @@ namespace StarFieldInteraction
             string displayName = !string.IsNullOrEmpty(starName) ? starName : $"HIP {hipId}";
             Debug.Log($"HOVER EXITED → {displayName}");
             
+            // Notify the StarSelectionManager that this star is no longer hovered
+            if (StarSelectionManager.Instance != null)
+            {
+                StarSelectionManager.Instance.OnStarUnhovered(this);
+            }
+            
             Renderer renderer = GetComponent<Renderer>();
             if (renderer != null)
             {
@@ -62,22 +74,10 @@ namespace StarFieldInteraction
             base.OnSelectEntered(args);
             
             string displayName = !string.IsNullOrEmpty(starName) ? starName : $"HIP {hipId}";
-            Debug.Log($"SELECT ENTERED → {displayName} - STAR SELECTED!");
+            Debug.Log($"SELECT ENTERED → {displayName} (Note: Selection now done with B button)");
             
-            // Notify the StarSelectionManager
-            if (StarSelectionManager.Instance != null)
-            {
-                StarSelectionManager.Instance.OnStarSelected(this);
-            }
-            else
-            {
-                // Fallback to yellow if no manager
-                Renderer renderer = GetComponent<Renderer>();
-                if (renderer != null)
-                {
-                    renderer.material.color = Color.yellow;
-                }
-            }
+            // Selection is now handled by B button press, not by Select event
+            // This is kept for debugging/logging purposes only
         }
 
         protected override void OnSelectExited(SelectExitEventArgs args)
@@ -87,20 +87,8 @@ namespace StarFieldInteraction
             string displayName = !string.IsNullOrEmpty(starName) ? starName : $"HIP {hipId}";
             Debug.Log($"SELECT EXITED → {displayName}");
             
-            // Notify the StarSelectionManager
-            if (StarSelectionManager.Instance != null)
-            {
-                StarSelectionManager.Instance.OnStarDeselected(this);
-            }
-            else
-            {
-                // Fallback to white if no manager
-                Renderer renderer = GetComponent<Renderer>();
-                if (renderer != null)
-                {
-                    renderer.material.color = Color.white;
-                }
-            }
+            // Selection is now handled by B button press, not by Select event
+            // This is kept for debugging/logging purposes only
         }
     }
 }
