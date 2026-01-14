@@ -87,7 +87,6 @@ public class ConstellationFieldFromApi : MonoBehaviour
             Vector3 pos = dir * radius;
             
             star.constellationName = constellation.name;
-            Debug.Log(star.constellationName);
 
             GameObject starGO = Instantiate(starPrefab, pos, Quaternion.identity, constelRoot.transform);
             starGO.name = $"{constellation.name}_HIP{star.hip}";

@@ -456,7 +456,7 @@ namespace StarFieldInteraction
             {
                 if (!string.IsNullOrEmpty(star.constellationName))
                 {
-                    ConstellationNameText.text = $"Constellation: {star.constellationName}";
+                    ConstellationNameText.text = $"{star.constellationName}";
                 }
                 else
                 {
