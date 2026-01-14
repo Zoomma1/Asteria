@@ -17,6 +17,7 @@ namespace StarFieldInteraction
         public double rightAscension;
         public double declination;
         public double magnitude;
+        public string constellationName;
         
         protected override void Awake()
         {

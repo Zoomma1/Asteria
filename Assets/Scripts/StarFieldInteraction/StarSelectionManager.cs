@@ -26,6 +26,10 @@ namespace StarFieldInteraction
         private TextMeshProUGUI starNameText;
         
         [SerializeField]
+        [Tooltip("Text component for star name")]
+        private TextMeshProUGUI ConstellationNameText;
+        
+        [SerializeField]
         [Tooltip("Text component for HIP ID")]
         private TextMeshProUGUI hipIdText;
         
@@ -358,7 +362,7 @@ namespace StarFieldInteraction
             // Star Name
             if (starNameText != null)
             {
-                string displayName = !string.IsNullOrEmpty(star.starName) 
+                string displayName = !string.IsNullOrEmpty(star.starName) || star.starName == "\"\""
                     ? star.starName 
                     : (star.hipId > 0 ? $"HIP {star.hipId}" : "Unknown Star");
                 starNameText.text = displayName;
@@ -366,6 +370,23 @@ namespace StarFieldInteraction
             else
             {
                 Debug.LogWarning("[StarSelectionManager] starNameText is NULL! Please assign in Inspector.");
+            }
+            
+            // Constellation Name
+            if (ConstellationNameText != null)
+            {
+                if (!string.IsNullOrEmpty(star.constellationName))
+                {
+                    ConstellationNameText.text = $"Constellation: {star.constellationName}";
+                }
+                else
+                {
+                    ConstellationNameText.text = "Constellation: Unknown";
+                }
+            }
+            else
+            {
+                Debug.LogWarning("[StarSelectionManager] ConstellationNameText is NULL! Please assign in Inspector.");
             }
             
             // HIP ID
