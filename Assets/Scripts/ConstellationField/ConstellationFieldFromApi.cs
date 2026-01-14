@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 using DTO;
+using Interface.ConstellationInfo;
 
 public class ConstellationFieldFromApi : MonoBehaviour
 {
@@ -68,6 +69,14 @@ public class ConstellationFieldFromApi : MonoBehaviour
         GameObject constelRoot = new GameObject($"Constellation_{constellation.name}");
         constelRoot.transform.SetParent(transform, false);
 
+        // Ajouter le composant ConstellationData
+        ConstellationData data = constelRoot.AddComponent<ConstellationData>();
+        data.Init(constellation);
+
+        // Ajouter un collider trigger pour la zone
+        SphereCollider collider = constelRoot.AddComponent<SphereCollider>();
+        collider.isTrigger = true;
+
         // HIP -> position du point dans la sphère
         Dictionary<int, Vector3> hipToPos = new Dictionary<int, Vector3>();
 
@@ -95,6 +104,52 @@ public class ConstellationFieldFromApi : MonoBehaviour
             }
         }
 
+        // Calculer la position moyenne des étoiles pour centrer la constellation
+        Vector3 averagePos = Vector3.zero;
+        foreach (var pos in hipToPos.Values)
+        {
+            averagePos += pos;
+        }
+        averagePos /= hipToPos.Count;
+
+        // Positionner le root au centre de la constellation
+        constelRoot.transform.position = averagePos;
+
+        // Repositionner les étoiles relativement au nouveau centre
+        foreach (var kvp in hipToPos)
+        {
+            Vector3 newLocalPos = kvp.Value - averagePos;
+            // Mettre à jour la position de l'étoile
+            Transform starTransform = constelRoot.transform.Find($"{constellation.name}_HIP{kvp.Key}");
+            if (starTransform != null)
+            {
+                starTransform.localPosition = newLocalPos;
+                // Ajuster la rotation billboard vers le centre relatif
+                starTransform.rotation = Quaternion.LookRotation(-newLocalPos);
+            }
+        }
+
+        // Calculer le rayon du collider basé sur la distance maximale entre les étoiles
+        List<Vector3> localPositions = new List<Vector3>();
+        foreach (Transform child in constelRoot.transform)
+        {
+            if (child.name.Contains("_HIP"))
+            {
+                localPositions.Add(child.localPosition);
+            }
+        }
+        
+        float maxDistance = 0f;
+        for (int i = 0; i < localPositions.Count; i++)
+        {
+            for (int j = i + 1; j < localPositions.Count; j++)
+            {
+                float dist = Vector3.Distance(localPositions[i], localPositions[j]);
+                maxDistance = Mathf.Max(maxDistance, dist);
+            }
+        }
+        collider.radius = maxDistance / 2f + 10f;
+
         // ---- Tracé des segments à partir de linkedStars ----
         if (constellation.stars.linkedStars != null &&
             constellation.stars.linkedStars.stars != null)
@@ -109,8 +164,6 @@ public class ConstellationFieldFromApi : MonoBehaviour
                     Debug.LogWarning($"Missing HIP in positions for constellation {constellation.name} : {link.fromStarHip} -> {link.toStarHip}");
                     continue;
                 }
-                
-                Debug.Log("Linking " + link.fromStarHip);
                 
                 GameObject lineObj = new GameObject($"{constellation.name}_Seg_{segmentIndex++}");
                 lineObj.transform.SetParent(constelRoot.transform, false);
