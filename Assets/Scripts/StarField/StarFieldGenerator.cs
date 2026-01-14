@@ -79,10 +79,18 @@ namespace StarField
                         boxCol.size = Vector3.one * 1.5f;
                     }
                     
+                    // Register star in central registry for lookup by other scripts
+                    string displayName = !string.IsNullOrEmpty(s.proper) ? s.proper : $"HIP {s.hip}";
+                    if (StarFieldInteraction.StarDataRegistry.Instance != null)
+                    {
+                        StarFieldInteraction.StarDataRegistry.Instance.RegisterStar(
+                            s.hip, displayName, s.ra, s.dec, s.mag
+                        );
+                    }
+                    
                     // Add XR interaction component
                     StarFieldInteraction.StarInteractableSimple interactable = star.AddComponent<StarFieldInteraction.StarInteractableSimple>();
                     
-                    string displayName = !string.IsNullOrEmpty(s.proper) ? s.proper : $"HIP {s.hip}";
                     interactable.starName = displayName;
                     interactable.hipId = s.hip;
                     interactable.rightAscension = s.ra;
