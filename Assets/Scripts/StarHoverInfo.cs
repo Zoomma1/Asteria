@@ -45,6 +45,7 @@ namespace Feature1
             
             if (starData != null && starData != currentStar)
             {
+                Debug.Log(starData.name);
                 currentStar = starData;
                 ShowStarInfo(starData.star);
             }
