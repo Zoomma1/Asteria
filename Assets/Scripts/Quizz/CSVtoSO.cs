@@ -1,9 +1,12 @@
 using System;
 using UnityEngine;
-using UnityEditor;
 using System.IO;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using Random = UnityEngine.Random;
 
+#if UNITY_EDITOR
 public class CVStoSO
 {
     private static string questionsCSVPath = "/Resources/CSVs/QuizAsteria.csv";
@@ -53,3 +56,4 @@ public class CVStoSO
         AssetDatabase.SaveAssets();
     }
 }
+#endif

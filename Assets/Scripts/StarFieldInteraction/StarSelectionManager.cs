@@ -75,6 +75,27 @@ namespace StarFieldInteraction
         [Tooltip("Fade animation duration")]
         private float fadeDuration = 0.3f;
         
+        [Header("UI Rotation")]
+        [SerializeField]
+        [Tooltip("Enable continuous rotation to face the camera (billboard effect)")]
+        private bool enableBillboardRotation = true;
+        
+        [SerializeField]
+        [Tooltip("Rotation speed for billboard effect")]
+        private float billboardRotationSpeed = 10f;
+        
+        [SerializeField]
+        [Tooltip("Enable continuous rotation around Y axis")]
+        private bool enableContinuousRotation = false;
+        
+        [SerializeField]
+        [Tooltip("Speed of continuous rotation (degrees per second)")]
+        private float continuousRotationSpeed = 30f;
+        
+        [SerializeField]
+        [Tooltip("Axis for continuous rotation")]
+        private Vector3 rotationAxis = Vector3.up;
+        
         private StarInteractableSimple currentlySelectedStar;
         private StarInteractableSimple currentlyHoveredStar;
         private Color originalStarColor;
@@ -160,27 +181,85 @@ namespace StarFieldInteraction
                         Time.deltaTime * transitionSpeed
                     );
                     
-                    starInfoCanvas.transform.rotation = Quaternion.Slerp(
-                        starInfoCanvas.transform.rotation,
-                        targetRotation,
-                        Time.deltaTime * transitionSpeed
-                    );
+                    // Only apply target rotation if billboard is disabled
+                    if (!enableBillboardRotation)
+                    {
+                        starInfoCanvas.transform.rotation = Quaternion.Slerp(
+                            starInfoCanvas.transform.rotation,
+                            targetRotation,
+                            Time.deltaTime * transitionSpeed
+                        );
+                    }
                     
                     // Stop positioning when close enough
                     if (Vector3.Distance(starInfoCanvas.transform.position, targetPosition) < 0.01f)
                     {
                         starInfoCanvas.transform.position = targetPosition;
-                        starInfoCanvas.transform.rotation = targetRotation;
+                        if (!enableBillboardRotation)
+                        {
+                            starInfoCanvas.transform.rotation = targetRotation;
+                        }
                         isPositioning = false;
                     }
                 }
                 else
                 {
                     starInfoCanvas.transform.position = targetPosition;
-                    starInfoCanvas.transform.rotation = targetRotation;
+                    
+                    // Only apply target rotation if billboard is disabled
+                    if (!enableBillboardRotation)
+                    {
+                        starInfoCanvas.transform.rotation = targetRotation;
+                    }
+                    
                     isPositioning = false;
                 }
             }
+            
+            // Apply UI rotation effects when canvas is active
+            if (starInfoCanvas != null && starInfoCanvas.activeSelf)
+            {
+                ApplyUIRotation();
+            }
+        }
+        
+        /// <summary>
+        /// Apply rotation effects to the UI canvas
+        /// </summary>
+        private void ApplyUIRotation()
+        {
+            if (starInfoCanvas == null || vrCamera == null)
+            {
+                return;
+            }
+            
+            Quaternion finalRotation = starInfoCanvas.transform.rotation;
+            
+            // Billboard effect: always face the camera
+            if (enableBillboardRotation)
+            {
+                Vector3 directionToCamera = vrCamera.position - starInfoCanvas.transform.position;
+                if (directionToCamera != Vector3.zero)
+                {
+                    Quaternion billboardRotation = Quaternion.LookRotation(-directionToCamera);
+                    finalRotation = Quaternion.Slerp(
+                        finalRotation,
+                        billboardRotation,
+                        Time.deltaTime * billboardRotationSpeed
+                    );
+                }
+            }
+            
+            // Continuous rotation around specified axis
+            if (enableContinuousRotation)
+            {
+                finalRotation *= Quaternion.AngleAxis(
+                    continuousRotationSpeed * Time.deltaTime,
+                    rotationAxis
+                );
+            }
+            
+            starInfoCanvas.transform.rotation = finalRotation;
         }
         
         /// <summary>
