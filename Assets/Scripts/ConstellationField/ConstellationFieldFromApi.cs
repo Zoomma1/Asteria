@@ -93,6 +93,15 @@ public class ConstellationFieldFromApi : MonoBehaviour
             starGO.transform.rotation = Quaternion.LookRotation(-pos);
 
             hipToPos[star.hip] = pos;
+            
+            // Register star in central registry for auto-population
+            string displayName = !string.IsNullOrEmpty(star.proper) ? star.proper : $"HIP {star.hip}";
+            if (StarFieldInteraction.StarDataRegistry.Instance != null)
+            {
+                StarFieldInteraction.StarDataRegistry.Instance.RegisterStar(
+                    star.hip, displayName, star.ra, star.dec, star.mag
+                );
+            }
         }
 
         // Calculer la position moyenne des étoiles pour centrer la constellation

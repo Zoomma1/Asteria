@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; // Required to load scenes
 
-namespace Menu
-{
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private string sceneToLoad = "";
@@ -93,5 +91,4 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
         Debug.Log("Game closed");
     }
-}
 }
