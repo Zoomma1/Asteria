@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: local
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size : 50MB
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      jdbc:
+        batch_size: 50
+      temp:
+        use_jdbc_metadata_defaults: false
+    open-in-view: false
+  flyway:
+    enabled: false
+
+server:
+  error:
+    include-message: always
+    include-exception: true
+    include-binding-errors: always
